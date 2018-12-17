@@ -47,13 +47,13 @@
 .linksDrop {
    background-color: transparent;
   border:none;
-  color: #7e7e7e;  
+  color: black;  
   cursor: pointer;
   text-decoration:none;
   display: inline-block;
   padding: 7px;
 }
-.linksDrop:focus {
+.linksDrop:active {
   text-decoration:none;
   color: white;
 }
