@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import About from './Container/About/About';
+import './App.css';
 import {
   Collapse,
   Navbar,
@@ -6,14 +9,12 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-
-
+import { NavLink } from 'react-router-dom';
 import Home from './Container/Home/home'
 
 class App extends Component {
@@ -42,17 +43,17 @@ class App extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink to='/'><span className='links'>Home</span></NavLink>
               </NavItem>
-
-
               <UncontrolledDropdown nav inNavbar>
+
                 <DropdownToggle nav caret>
-                  About Us
+                    About Us   
                 </DropdownToggle>
+             
                 <DropdownMenu right>
                   <DropdownItem>
-                    About Us
+                    <NavLink to='about'><span className='linksDrop'>About Us</span></NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     Why choose us?
@@ -73,13 +74,12 @@ class App extends Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
-
             </Nav>
           </Collapse>
         </Navbar>
       
-      <Home/>
+      <Route path="/about" component={About}/>
+      <Route path="/" exact component={Home}/>
 
       </div>
     );
