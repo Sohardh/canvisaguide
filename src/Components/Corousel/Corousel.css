@@ -1,0 +1,10 @@
+.cards {
+	display: inline-block;
+	width: 100%;
+}
+.Corousel {
+	color: black;
+	outline: black;
+	background-color: black;
+	padding: 20px;
+}
