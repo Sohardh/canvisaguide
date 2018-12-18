@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import About from './Container/About/About';
+import Choose from './Container/About/Choose/Choose';
+import Profile from './Container/About/Profile/Profile';
+import About from './Container/About/Aboutus/About';
 import './App.css';
 import {
   Collapse,
@@ -37,7 +39,7 @@ class App extends Component {
     return (
       <div className="App">
       <Navbar color="light" light expand="md" sticky="top">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
 
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -48,7 +50,7 @@ class App extends Component {
               <UncontrolledDropdown nav inNavbar>
 
                 <DropdownToggle nav caret>
-                    About Us   
+                  About Us   
                 </DropdownToggle>
              
                 <DropdownMenu right>
@@ -56,7 +58,10 @@ class App extends Component {
                     <NavLink to='about'><span className='linksDrop'>About Us</span></NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    Why choose us?
+                   <NavLink to ='choose'> <span className='linksDrop'>Why Choose us?</span></NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                  <NavLink to ='profile'> <span className='linksDrop'>Our Profile</span></NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -79,7 +84,10 @@ class App extends Component {
         </Navbar>
       
       <Route path="/about" component={About}/>
+      <Route path="/choose" exact component={Choose}/>
+      <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
+      
 
       </div>
     );
