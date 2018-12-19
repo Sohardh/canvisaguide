@@ -20,15 +20,15 @@ class App extends Component {
       nav:[
     {link:'Home',linkedto:'/'},
     {link:'About',linkedto:'about'},
-    {link:'Free appraisal',linkedto:'about'},
-    {link:'Services',linkedto:'about'},
-    {link:'Study',linkedto:'about'},
-    {link:'Work',linkedto:'about'},
-    {link:'Visit',linkedto:'about'},
-    {link:'Immigration',linkedto:'about'},
-    {link:'News',linkedto:'about'},
-    {link:'Weather',linkedto:'about'},
-    {link:'Contact',linkedto:'about'},
+    {link:'Free appraisal',linkedto:'free'},
+    {link:'Services',linkedto:'services'},
+    {link:'Study',linkedto:'study'},
+    {link:'Work',linkedto:'work'},
+    {link:'Visit',linkedto:'visit'},
+    {link:'Immigration',linkedto:'immigration'},
+    {link:'News',linkedto:'news'},
+    {link:'Weather',linkedto:'weather'},
+    {link:'Contact',linkedto:'contact'},
     ]
     };
   }
