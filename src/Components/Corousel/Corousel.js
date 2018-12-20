@@ -13,7 +13,8 @@ export default class Corousel extends React.Component {
       <Carousel indicators={false} controls={false} interval={5000}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          width='100%'
+          height='auto'
           src={sd}
           alt="First slide"
         />
