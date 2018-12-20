@@ -27,3 +27,4 @@ class About extends Component {
 	}
 }
 export default About;
+//action="https://mailthis.to/sohardhchobera684@gmail.com" method="POST"

@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap';
 import hs1o from '../../Assets/hs1o.png';
 import hs2o from '../../Assets/hs2o.png';
 import hs3o from '../../Assets/hs3o.png';
-import sd from '../../Assets/1sto.png';
+import sd from '../../Assets/1st.png';
 
 export default class Corousel extends React.Component {
 

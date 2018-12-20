@@ -1,0 +1,19 @@
+.form{
+ color: gray;
+ margin-top: 10%;
+ margin-bottom: 10%;
+
+}
+label{
+    font-size: 0.9em;
+}
+p{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.whole{
+align-content: stretch;
+align-items: stretch;
+align-self: flex-end;
+
+}
