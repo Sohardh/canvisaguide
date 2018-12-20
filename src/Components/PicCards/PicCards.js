@@ -1,54 +1,47 @@
-import React from 'react';
-import {Container,Row,Col} from 'react-bootstrap';
-import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button,CardDeck } from 'react-bootstrap';
-import first from '../../Assets/towero.png'
-export default class PicCards extends React.Component {
+import React from "react";
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import './PicCards.css';
+import hs3o from '../../Assets/tower.jpg';
+import img from '../../Assets/vertical.jpg';
+
+class PicCards extends React.Component {
+  state={
+    cards:[
+    {img:hs3o,caption:"Visit Canada"},
+    {img:img,caption:"Visit Canada"},
+    {img:hs3o,caption:"Visit Canada"},
+
+    ]
+  }
 
   render() {
+    let cards=this.state.cards.map((card,id)=> {
+      return(
+        <MDBCol md="4" >
+           <div className='cards'>
+            <MDBView waves>
+           
+              <img
+                src={card.img}
+                className="img-fluid card"
+                alt=""
+              /> 
+              <MDBMask className="flex-center" overlay="teal-slight">
+                <h4 className="white-text text">{card.caption}</h4>
+              </MDBMask>
+            </MDBView>
+            </div>
+          </MDBCol>
+        )
+    })
     return (
-<CardDeck>
-  <Card bg ="light" small="true">
-    <Card.Img variant="top" src={first} />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
-
+      <MDBContainer className="mt-5">
+        <MDBRow className="mt-4">
+        {cards}
+        </MDBRow>
+      </MDBContainer>
     );
   }
 }
+
+export default PicCards;

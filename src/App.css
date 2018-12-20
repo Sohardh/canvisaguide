@@ -28,8 +28,7 @@
 }
 
 .distinct {
-  color: #7e7e7e;  
-
+  color: #7e7e7e; 
 }
 .links:after {
   content: '';
@@ -43,4 +42,17 @@
 .links:hover:after {
   width: 100%;
 background: #515151;
+}
+@media(max-width:1200px ) {
+  .distinct {
+    display: none;
+  }
+ 
+}
+@media(max-width:800px ) {
+ .links {
+    text-align: center;
+    margin-left: 40%;
+    
+  }
 }

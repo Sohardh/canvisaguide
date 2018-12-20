@@ -46,7 +46,7 @@ class App extends Component {
         </NavItem>);
     })
     return (
-      <div className="App">
+      <div >
       <Navbar color="light" light expand="md" sticky="top">
           <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -56,6 +56,7 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
+
       
       <Route path="/about" component={About}/>
       <Route path="/choose" exact component={Choose}/>
