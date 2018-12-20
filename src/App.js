@@ -7,6 +7,11 @@ import './App.css';
 import {Collapse,Navbar, NavbarToggler,NavbarBrand,Nav,NavItem, UncontrolledDropdown,DropdownToggle,DropdownMenu,DropdownItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import Home from './Container/Home/home';
+import free from './Container/FreeApprsl/FreeApprsl';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
+
 
 class App extends Component {
 
@@ -59,6 +64,7 @@ class App extends Component {
 
       
       <Route path="/about" component={About}/>
+      <Route path="/free" component={free}/>
       <Route path="/choose" exact component={Choose}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
