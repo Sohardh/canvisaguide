@@ -3,25 +3,28 @@ import {Carousel} from 'react-bootstrap';
 import hs1o from '../../Assets/hs1o.png';
 import hs2o from '../../Assets/hs2o.png';
 import hs3o from '../../Assets/hs3o.png';
-import sd from '../../Assets/1st.png';
+import sd from '../../Assets/1sto.png';
+import './Corousel.css';
 
 export default class Corousel extends React.Component {
 
   render() {
     return (
-      <div>
-      <Carousel indicators={false} controls={false} interval={5000}>
+      <div className="cor">
+      <Carousel indicators={false} controls={false} interval={3000}>
       <Carousel.Item>
+  
         <img
-          width='100%'
-          height='auto'
-          src={sd}
+          className="d-block w-100"
+          src={hs1o}
           alt="First slide"
         />
+
         <Carousel.Caption>
-          <h1>Move to Canada</h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1 className='corText'>Move to Canada</h1>
+          <p >We have offices both in Canada and India</p>
         </Carousel.Caption>
+
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -31,8 +34,8 @@ export default class Corousel extends React.Component {
         />
     
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1 className='corText'>Study in Canada</h1>
+          <p>Get high quality education</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,8 +46,8 @@ export default class Corousel extends React.Component {
         />
     
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h1 className='corText'>Work in Canada</h1>
+          <p>shape your career in best working environmen .</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -56,8 +59,8 @@ export default class Corousel extends React.Component {
         />
     
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h1 className='corText'>Visit Canada</h1>
+          <p>Unpack an incredible experience</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
