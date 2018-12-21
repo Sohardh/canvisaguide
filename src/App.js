@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Choose from './Container/About/Choose/Choose';
 import Profile from './Container/About/Profile/Profile';
 import About from './Container/About/Aboutus/About';
 import './App.css';
@@ -11,6 +10,8 @@ import free from './Container/FreeApprsl/FreeApprsl';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
+import FooterPage from './Components/Footer/Footer';
+import SpouseSponsor from './Components/SpouseSponsor/SpouseSponsor';
 
 
 class App extends Component {
@@ -46,12 +47,13 @@ class App extends Component {
   render() {
     let navlinks=this.state.nav.map((linked,id)=>{
       return(
-        <NavItem>
-                <NavLink to={linked.linkedto} key={id}><span className='links'>{linked.link}</span><span className='distinct'>|</span></NavLink>
+        <NavItem key={id}>
+                <NavLink to={linked.linkedto} ><span className='links'>{linked.link}</span><span className='distinct'>|</span></NavLink>
         </NavItem>);
     })
     return (
       <div >
+    
       <Navbar color="light" light expand="md" sticky="top">
           <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -61,13 +63,14 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-
-      
+      {/* All routes used to navigate to diferent pages in the website */}
+      <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/about" component={About}/>
       <Route path="/free" component={free}/>
-      <Route path="/choose" exact component={Choose}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
+      
+      <FooterPage/>
       </div>
     );
   }
