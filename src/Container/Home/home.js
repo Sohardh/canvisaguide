@@ -36,9 +36,14 @@ let routePicCards = <Redirect to='/' /> //to enable directing to home page after
         <br/>
         <br/>
         
-        <p className='capt'><Fade bottom delay={500}>Want to come to Canada to study, work, visit or live ?</Fade><Fade bottom delay={700}>You are at the right place</Fade> <Fade bottom delay={900}>We will help you with all your immigration needs.</Fade></p>
+        <p className='capt'><Fade bottom delay={500}>Want to come to Canada to study, work, visit or live ?</Fade><Fade bottom delay={700}>You are at the right place</Fade> 
+        <Fade bottom delay={900}>We will help you with all your immigration needs.</Fade></p>
 		<br/>
-		{routePicCards}
+    {routePicCards}
+    <p className='capt'><Fade bottom delay={500}>Can Visa Guide (CVG) is a company with offices both in India and Canada that will help people with their various immigration needs. </Fade>
+    <Fade bottom delay={700}>If you want to come to Canada- to study, work, visit or live- our company can help you.</Fade> 
+        <Fade bottom delay={900}>We will also answer all your immigration questions and help you start your journey.
+</Fade></p>
  
         
       </div>

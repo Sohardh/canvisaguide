@@ -1,56 +1,42 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
-
-
+import hs1 from '../../../Assets/city.jpg';
+import nigara from '../../../Assets/nigara2.jpg'
+import './About.css'
 class About extends Component {
 	render() {
 		return (
-			 <MDBCard className="my-5 px-5 pb-5">
+			 <MDBCard className="my-10 px-10 pb-10">
       <MDBCardBody>
         <MDBRow>
           <MDBCol md="12">
             <MDBCard reverse>
               <MDBView hover cascade waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg"
+              <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">
+              <img
+                  src={hs1}
                   alt=""
-                  className="img-fluid"
+                  className="img-fluid" 
                 />
+              </a>
+                
                 <MDBMask overlay="white-slight" className="waves-light" />
               </MDBView>
               <MDBCardBody cascade className="text-center">
                 <h2 className="font-weight-bold">
-                  <a href="#!">About Canada</a>
+                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">About Canada</a>
                 </h2>
-                <p>
-                  Written by
-                  <a href="#!">
-                    <strong>Abby Madison</strong>
-                  </a>
-                  , 26/08/2018
-                </p>
+               
                 
                 
               </MDBCardBody>
             </MDBCard>
-            <MDBContainer className="mt-5">
+            <MDBContainer className="text-justify">
               <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                praesentium voluptatum deleniti atque corrupti quos dolores et
-                quas molestias excepturi sint occaecati cupiditate non
-                provident, similique sunt in culpa nemo enim ipsam voluptatem
-                quia voluptas sit qui officia deserunt mollitia animi, id est
-                laborum et dolorum fuga quidem rerum facilis est distinctio.
+              Canada is a North American country stretching from the U.S. in the south to the Arctic Circle in the north. Major cities include massive Toronto, west coast film centre Vancouver, French-speaking Montréal and Québec City, and capital city Ottawa. Canada's vast swaths of wilderness include lake-filled Banff National Park in the Rocky Mountains. It's also home to Niagara Falls, a famous group of massive waterfalls.
               </p>
               <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere
-                possimus, omnis voluptas assumenda est, omnis dolor
-                repellendus. Quis autem vel eum iure reprehenderit qui in ea
-                voluptate velit esse quam nihil molestiae consequatur.
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae sint
-                et molestiae non recusandae itaque earum rerum.
+              Canada is a developed country and has the fifteenth-highest nominal per capita income globally as well as the twelfth-highest ranking in the Human Development Index. Its advanced economy is the tenth-largest in the world, relying chiefly upon its abundant natural resources and well-developed international trade networks. Canada is part of several major international and intergovernmental institutions or groupings including the United Nations, the North Atlantic Treaty Organization, the G7 (formerly G8), the Group of Ten, the G20, the North American Free Trade Agreement and the Asia-Pacific Economic Cooperation forum.
               </p>
             </MDBContainer>
           </MDBCol>
@@ -61,7 +47,7 @@ class About extends Component {
             <MDBCard reverse>
               <MDBView hover cascade waves>
                 <img
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(146).jpg"
+                  src={nigara}
                   alt=""
                   className="img-fluid"
                 />
@@ -69,29 +55,19 @@ class About extends Component {
               </MDBView>
               <MDBCardBody cascade className="text-center">
                 <h2 className="font-weight-bold">
-                  <a href="#!">  Canada history of immigration</a>
+                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/archives/backgrounders-2011/facts-canada-immigration-history.html" target="_blank">  Canada history of immigration</a>
                 </h2>
              
               </MDBCardBody>
             </MDBCard>
             <MDBContainer className="mt-5">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem.
+              Canada is often referred to as a land of immigrants because millions of newcomers have settled here and helped to build and defend our way of life, starting with settlers from France and England.
               </p>
-              <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam
-                quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur.
+              <h2 className="font-weight-bold">What does IRCC stand FOR ?</h2>
+              <p>Immigration, Refugees and Citizenship Canada facilitates the arrival of immigrants, provides protection to refugees, and offers programming to help newcomers settle in Canada. 
+                <br/>
+                <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">For more Information.....</a>
               </p>
             </MDBContainer>
           </MDBCol>
