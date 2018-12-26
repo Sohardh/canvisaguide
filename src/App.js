@@ -53,7 +53,7 @@ class App extends Component {
     })
     return (
       <div >
-    
+     
       <Navbar color="light" light expand="md" sticky="top">
           <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -64,13 +64,19 @@ class App extends Component {
           </Collapse>
         </Navbar>
       {/* All routes used to navigate to diferent pages in the website */}
+      
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/about" component={About}/>
       <Route path="/free" component={free}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
-      
+ 
+<br/>
+     
+
+     
       <FooterPage/>
+      
       </div>
     );
   }

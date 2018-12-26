@@ -23,6 +23,8 @@ Opposite to Lovely Autos, Jalandhar-144001<br/><br/>
 *Passport Collection Timing: 09:00 to 17:00<br/>
 e-mail:<br/>
 Call on: 8558076070<br/>
+
+
       </p>
       </Col>
       <Col md="4">
@@ -41,6 +43,7 @@ Call on: 8558076070<br/>
           <a href="#!">Student Visa</a>
         </li>
       </ul>
+      
       </Col>
       <Col md="4">
       <h5 className="title">Company Info</h5>
@@ -58,13 +61,19 @@ Call on: 8558076070<br/>
           <a href="#!">In the News</a>
         </li>
       </ul>
+      <button class="btn blue-gradient">Free Appraisal</button>
+<button class="btn purple-gradient">contact Us</button>
+
       </Col>
+      
     </Row>
+    
   </Container>
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}
       <a href="https://www.canvisaguide.com"> canvisaguide.com</a>
+
     </Container>
   </div>
 </Footer>

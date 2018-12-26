@@ -9,6 +9,12 @@
   padding: 10px;
 
 }
+.btn {
+  float: right;
+
+
+  font-size: 20px;
+}
 .links:hover {
   text-decoration:none;
   color: #515151;
