@@ -1,11 +1,25 @@
 .foot {
 	background-color:#313131;
 	color: #bab7b7;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Footlinks a{
 	color: #bab7b7;
 	text-decoration: none;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .address {
 	color: #bab7b7;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.list-unstyled{
+	margin-left: -7%;
+}
+.title{
+	color:snow;
+
+}
+.btn{
+	flex:right;
+	margin-left: 150%;
 }

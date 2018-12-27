@@ -12,6 +12,14 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import FooterPage from './Components/Footer/Footer';
 import SpouseSponsor from './Components/SpouseSponsor/SpouseSponsor';
+import Services from './Container/Services/Services';
+import Study from './Container/Services/Services';
+import Immigration from './Container/Immigration/Immigration';
+import Weather from './Container/Weather/Weather';
+import Contact from './Container/Contact/Contact';
+import Work from './Container/Work/Work';
+import Visit from './Container/Visit/Visit';
+import News from './Container/News/News';
 
 
 class App extends Component {
@@ -53,7 +61,7 @@ class App extends Component {
     })
     return (
       <div >
-    
+     
       <Navbar color="light" light expand="md" sticky="top">
           <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -64,13 +72,27 @@ class App extends Component {
           </Collapse>
         </Navbar>
       {/* All routes used to navigate to diferent pages in the website */}
+      
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/about" component={About}/>
       <Route path="/free" component={free}/>
+      <Route path="/services" component={Services}/>
+      <Route path="/study" component={Study}/>
+      <Route path="/work" component={Work}/>
+      <Route path="/visit" component={Visit}/>
+      <Route path="/immigration" component={Immigration}/>
+      <Route path="/news" component={News}/>
+      <Route path="/weather" component={Weather}/>
+      <Route path="/contact" component={Contact}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
-      
+ 
+<br/>
+     
+
+     
       <FooterPage/>
+      
       </div>
     );
   }

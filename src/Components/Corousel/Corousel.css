@@ -2,11 +2,18 @@
 	height: 30vw;
 }
 .corText {
-	 color: white;
-   text-shadow:
-   -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
+      color: white;
+      height: 15vw;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-blend-mode: color-burn;
 
+      
+      
+      font-size: 5vw;
+
+}
+
+.corepa{
+     color: white;
+     background-color: black;
 }

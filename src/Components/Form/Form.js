@@ -12,11 +12,11 @@ const FormPage = () => {
   }
   return (
     <MDBContainer>
-      <h2 className="h2 text-center mb-9">Free Assessment for Education and Immigration Canada
+      <h2 className="heading text-center mb-10">Free Assessment for Education and Immigration Canada
 </h2>
 <div className="whole " >
       <MDBRow>
-        <MDBCol md="9">
+        <MDBCol md="10">
           <form action="https://mailthis.to/sohardhchobera684@gmail.com" method="POST" target="_blank" className="border border p-10">
             
             <div className="grey-text">
@@ -88,7 +88,7 @@ const FormPage = () => {
               />
                   </MDBCol>
                   <MDBCol sm ='6'>
-                  <select className="browser-default custom-select form-control " name='Marital Status' label='Marital Status'>
+                  <select className="browser-default custom-select form-control mar " name='Marital Status' label='Marital Status'>
                 <option>Marital Status</option>
                 <option value="Married">Married</option>
                 <option value="Single">Single</option>
@@ -97,7 +97,7 @@ const FormPage = () => {
                   </MDBCol>
                   
                 </MDBRow>
-               <div class="blockquote bq-primary">
+               <div class="blockquote bq-primary didyou">
     
                <p >Did you take the IELTS English Test? </p>
                <div class="custom-control custom-radio" >
