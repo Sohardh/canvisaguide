@@ -3,8 +3,30 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
 import "./Footer.css";
+import {Modal } from 'react-bootstrap';
+import {Button } from 'react-bootstrap';
+import Form from '../Form/Form.js';
 
 class FooterPage extends React.Component {
+ constructor(props, context) {
+    super(props, context);
+
+    this.handleHide = this.handleHide.bind(this);
+
+    this.state = {
+      show: false
+    };
+  }
+  
+
+  handleShow=()=> {
+    this.setState({ show: true });
+  }
+
+  handleHide() {
+    this.setState({ show: false });
+  }
+
 render() {
 return (
   <div className="foot">
@@ -61,7 +83,7 @@ Call on: 8558076070<br/>
           <a href="#!">In the News</a>
         </li>
       </ul>
-      <button class="btn blue-gradient">Free Appraisal</button>
+      <button onClick={this.handleShow} class="btn blue-gradient">Free Appraisal</button>
 <button class="btn purple-gradient">contact Us</button>
 
       </Col>
@@ -77,6 +99,24 @@ Call on: 8558076070<br/>
     </Container>
   </div>
 </Footer>
+<Modal
+          {...this.props}
+          show={this.state.show}
+          onHide={this.handleHide}
+          dialogClassName="custom-modal"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-lg">
+             <p className="heading text-center mb-10">Free Assessment for Education and Immigration Canada</p>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+             <Form/>
+            </p>
+          </Modal.Body>
+         
+        </Modal>
 </div>
 );
 }
