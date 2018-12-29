@@ -12,11 +12,10 @@ const FormPage = () => {
   }
   return (
     <MDBContainer>
-      <h2 className="heading text-center mb-10">Free Assessment for Education and Immigration Canada
-</h2>
+      
 <div className="whole " >
       <MDBRow>
-        <MDBCol md="10">
+        <MDBCol md="12">
           <form action="https://mailthis.to/sohardhchobera684@gmail.com" method="POST" target="_blank" className="border border p-10">
             
             <div className="grey-text">
@@ -207,8 +206,8 @@ const FormPage = () => {
             <ReCAPTCHA
     sitekey="6LeHwIMUAAAAAFMBRk6blWmfvsVQCPjTJq2e8jRG"
     onChange={onChange}
-  />,
-              <MDBBtn color="primary" type = 'submit' class="form-control">Register</MDBBtn>
+  />
+              <MDBBtn color="primary" type = 'submit' className="form-control">Register</MDBBtn>
             </div>
           </form>
         </MDBCol>

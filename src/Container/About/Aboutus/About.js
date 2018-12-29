@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import hs1 from '../../../Assets/city.jpg';
 import nigara from '../../../Assets/nigara2.jpg'
+import canada2 from '../../../Assets/canada2.jpg';
+import canada1 from '../../../Assets/canada1.jpg';
+import canada3 from '../../../Assets/canada3.jpg';
+import Fade from 'react-reveal/Fade';
 import './About.css'
 class About extends Component {
 	render() {
@@ -9,19 +13,26 @@ class About extends Component {
 			 <MDBCard className="my-10 px-10 pb-10">
       <MDBCardBody>
         <MDBRow>
-          <MDBCol md="12">
+        
+          <MDBCol >
+          <div className="w-responsive text-center mx-auto p-3 mt-2">
+<Fade bottom appear>
             <MDBCard reverse>
+            
               <MDBView hover cascade waves>
               <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">
+           <div className="w-responsive text-center mx-auto p-3 mt-2">
               <img
-                  src={hs1}
+                  src={canada2}
                   alt=""
                   className="img-fluid" 
                 />
+            </div>
               </a>
                 
                 <MDBMask overlay="white-slight" className="waves-light" />
               </MDBView>
+              
               <MDBCardBody cascade className="text-center">
                 <h2 className="font-weight-bold">
                   <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">About Canada</a>
@@ -30,27 +41,38 @@ class About extends Component {
                 
                 
               </MDBCardBody>
+
             </MDBCard>
+            </Fade>
+             </div>
+         
             <MDBContainer className="text-justify">
-              <p>
+               <Fade bottom appear><p>
               Canada is a North American country stretching from the U.S. in the south to the Arctic Circle in the north. Major cities include massive Toronto, west coast film centre Vancouver, French-speaking Montréal and Québec City, and capital city Ottawa. Canada's vast swaths of wilderness include lake-filled Banff National Park in the Rocky Mountains. It's also home to Niagara Falls, a famous group of massive waterfalls.
-              </p>
-              <p>
+              </p></Fade>
+               <Fade bottom appear><p>
               Canada is a developed country and has the fifteenth-highest nominal per capita income globally as well as the twelfth-highest ranking in the Human Development Index. Its advanced economy is the tenth-largest in the world, relying chiefly upon its abundant natural resources and well-developed international trade networks. Canada is part of several major international and intergovernmental institutions or groupings including the United Nations, the North Atlantic Treaty Organization, the G7 (formerly G8), the Group of Ten, the G20, the North American Free Trade Agreement and the Asia-Pacific Economic Cooperation forum.
-              </p>
+              </p></Fade>
             </MDBContainer>
+
           </MDBCol>
         </MDBRow>
         <hr className="mb-5 mt-4" />
+        <br/>
+        <br/>
         <MDBRow>
-          <MDBCol md="12">
+          <MDBCol>
+          <div className="w-responsive text-center mx-auto p-3 mt-2">
+           <Fade bottom appear>
             <MDBCard reverse>
               <MDBView hover cascade waves>
+           <div className="w-responsive text-center mx-auto p-3 mt-2">
                 <img
-                  src={nigara}
+                  src={canada3}
                   alt=""
                   className="img-fluid"
                 />
+                </div>
                 <MDBMask overlay="white-slight" className="waves-light" />
               </MDBView>
               <MDBCardBody cascade className="text-center">
@@ -60,15 +82,17 @@ class About extends Component {
              
               </MDBCardBody>
             </MDBCard>
+            </Fade>
+            </div>
             <MDBContainer className="mt-5">
-              <p>
+               <Fade bottom appear><p>
               Canada is often referred to as a land of immigrants because millions of newcomers have settled here and helped to build and defend our way of life, starting with settlers from France and England.
-              </p>
+              </p></Fade>
               <h2 className="font-weight-bold">What does IRCC stand FOR ?</h2>
-              <p>Immigration, Refugees and Citizenship Canada facilitates the arrival of immigrants, provides protection to refugees, and offers programming to help newcomers settle in Canada. 
+               <Fade bottom appear><p>Immigration, Refugees and Citizenship Canada facilitates the arrival of immigrants, provides protection to refugees, and offers programming to help newcomers settle in Canada. 
                 <br/>
                 <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">For more Information.....</a>
-              </p>
+              </p></Fade>
             </MDBContainer>
           </MDBCol>
         </MDBRow>

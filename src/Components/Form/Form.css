@@ -15,6 +15,7 @@ p{
 align-content: stretch;
 align-items: stretch;
 align-self: flex-end;
+width: 100%;
 
 }
 .mar{
@@ -22,4 +23,9 @@ align-self: flex-end;
 }
 .didyou{
     margin-top: 5%;
+}
+.register {
+	cursor: pointer;
+	background-color: grey;
+	color:white;
 }

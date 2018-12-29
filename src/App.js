@@ -34,7 +34,6 @@ class App extends Component {
       nav:[
     {link:'Home',linkedto:'/'},
     {link:'About',linkedto:'about'},
-    {link:'Free appraisal',linkedto:'free'},
     {link:'Services',linkedto:'services'},
     {link:'Study',linkedto:'study'},
     {link:'Work',linkedto:'work'},
