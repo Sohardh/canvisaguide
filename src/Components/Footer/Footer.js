@@ -83,8 +83,8 @@ Call on: 8558076070<br/>
           <a href="#!">In the News</a>
         </li>
       </ul>
-      <button onClick={this.handleShow} class="btn blue-gradient">Free Appraisal</button>
-<button class="btn purple-gradient">contact Us</button>
+      <button onClick={this.handleShow} class="btn blue">Free Appraisal</button>
+<button class="btn red">contact Us</button>
 
       </Col>
       
