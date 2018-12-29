@@ -13,7 +13,7 @@ import 'mdbreact/dist/css/mdb.css';
 import FooterPage from './Components/Footer/Footer';
 import SpouseSponsor from './Components/SpouseSponsor/SpouseSponsor';
 import Services from './Container/Services/Services';
-import Study from './Container/Services/Services';
+import Study from './Container/Study/Study';
 import Immigration from './Container/Immigration/Immigration';
 import Weather from './Container/Weather/Weather';
 import Contact from './Container/Contact/Contact';

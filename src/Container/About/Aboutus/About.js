@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import hs1 from '../../../Assets/city.jpg';
 import nigara from '../../../Assets/nigara2.jpg'
-import canada2 from '../../../Assets/canada2.jpg';
+import canada2 from '../../../Assets/hs4.jpg';
 import canada1 from '../../../Assets/canada1.jpg';
 import canada3 from '../../../Assets/canada3.jpg';
 import Fade from 'react-reveal/Fade';
@@ -21,9 +21,9 @@ class About extends Component {
             
               <MDBView hover cascade waves>
               <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">
-           <div className="w-responsive text-center mx-auto p-3 mt-2">
+           <div className=" text-center mx-auto p-3 mt-2">
               <img
-                  src={canada2}
+                  src={hs1}
                   alt=""
                   className="img-fluid" 
                 />
@@ -66,9 +66,9 @@ class About extends Component {
            <Fade bottom appear>
             <MDBCard reverse>
               <MDBView hover cascade waves>
-           <div className="w-responsive text-center mx-auto p-3 mt-2">
+           <div className="=text-center mx-auto p-3 mt-2">
                 <img
-                  src={canada3}
+                  src={canada2}
                   alt=""
                   className="img-fluid"
                 />
