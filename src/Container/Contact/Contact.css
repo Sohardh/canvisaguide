@@ -1,0 +1,14 @@
+.mapouter {text-align:right; }
+.gmap_canvas {overflow:hidden;background:none!important;}
+
+
+.form {
+ 
+  margin-left: 28px;
+
+}
+.map {
+-webkit-box-shadow: 2px 6px 62px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 6px 62px -15px rgba(0,0,0,0.75);
+box-shadow: 2px 6px 62px -15px rgba(0,0,0,0.75);
+}

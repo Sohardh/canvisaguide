@@ -6,6 +6,7 @@ import "./Footer.css";
 import {Modal } from 'react-bootstrap';
 import {Button } from 'react-bootstrap';
 import Form from '../Form/Form.js';
+import ContactUs from '../Contact/Contact';
 
 class FooterPage extends React.Component {
  constructor(props, context) {
@@ -14,7 +15,8 @@ class FooterPage extends React.Component {
     this.handleHide = this.handleHide.bind(this);
 
     this.state = {
-      show: false
+      show: false,
+      showContact: false
     };
   }
   
@@ -25,6 +27,12 @@ class FooterPage extends React.Component {
 
   handleHide() {
     this.setState({ show: false });
+  }
+  handleShowContact =() => {
+     this.setState({ showContact: true });
+  }
+handleHideContact =() => {
+    this.setState({ showContact: false });
   }
 
 render() {
@@ -84,7 +92,7 @@ Call on: 8558076070<br/>
         </li>
       </ul>
       <button onClick={this.handleShow} class="btn blue">Free Appraisal</button>
-<button class="btn red">contact Us</button>
+<button onClick={this.handleShowContact} class="btn red">contact Us</button>
 
       </Col>
       
@@ -113,6 +121,20 @@ Call on: 8558076070<br/>
           <Modal.Body>
             <p>
              <Form/>
+            </p>
+          </Modal.Body>
+         
+        </Modal>
+        <Modal
+          {...this.props}
+          show={this.state.showContact}
+          onHide={this.handleHideContact}
+          dialogClassName="custom-modal"
+        >
+       
+          <Modal.Body>
+            <p>
+             <ContactUs/>
             </p>
           </Modal.Body>
          

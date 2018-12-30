@@ -2,6 +2,10 @@ import React , { Component }  from 'react';
 import Fade from 'react-reveal/Fade';
 import './immigration.css';
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
+import resident from '../../Assets/resident.jpg';
+import flags from '../../Assets/image21.jpeg';
+import business from '../../Assets/business.jpg';
+import caregivers from '../../Assets/caregivers.jpg'
 class Immigration extends Component {
     render(){
         return(
@@ -14,7 +18,7 @@ class Immigration extends Component {
             </h2>
             <div className="service">
                 <ul className="w-responsive  mx-auto p-1 mt-1 text-justify" >
-                <Fade left appear><p className="responsive "> Part of the immigration process is taking a Language Proficiency Test.  Scores are converted to the Canadian Language Benchmarks and points can be awarded depending on the immigration stream.  
+                <Fade bottom appear><p className="responsive "> Part of the immigration process is taking a Language Proficiency Test.  Scores are converted to the Canadian Language Benchmarks and points can be awarded depending on the immigration stream.  
             <br/> <br/>
             Approved Language Proficiency Tests  are as follows:  IELTS, CELPIP, TEF, TCF 
 They are required for immigration to Canada under the following streams:
@@ -101,11 +105,6 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 <br/>
-
-
-
-
-
 <h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>International English Language Testing System (IELTS) – General Training – Test score equivalency chart</strong>
             </h2>
@@ -206,10 +205,6 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 <br/>
-
-
-
-
 <h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Test d’évaluation de français pour le Canada (TEF Canada) Test score equivalency chart</strong>
             </h2>
@@ -367,7 +362,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
             </h2>
             <div className="service">
                 <ul className="responsive text-center mx-auto p-1 mt-1 text-justify" >
-                <Fade left appear><p className="responsive "> Up to 22 points are awarded under the Language Proficiency factor of the Quebec Skilled Worker Program  on the following basis.       </p></Fade>
+                <Fade bottom appear><p className="responsive "> Up to 22 points are awarded under the Language Proficiency factor of the Quebec Skilled Worker Program  on the following basis.       </p></Fade>
                
                 </ul>
                 </div>
@@ -438,15 +433,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 
-
-
-
-
 <br/>
-
-
-
-
 <h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>English Language proficiency </strong>
             </h2>
@@ -501,7 +488,256 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 </div>
+ <MDBCard className="my-1 px-1 pb-1">
+            <br/>
+            <p className="head"><strong> Pathway to Permanent Resident Canada</strong></p>
+            <MDBCardBody>
+              <MDBRow>
+              
+                <MDBCol >
+                <div className="w-responsive text-center mx-auto p-3 mt-2">
+      <Fade bottom appear>
+                  <MDBCard reverse>
+                  
+                    <MDBView hover cascade waves>
+                   
+                 <div className="text-center mx-auto p-3 mt-2">
+                    <img
+                        src={resident}
+                        alt=""
+                        className="img-fluid" 
+                      />
+                  </div>
+                   
+                      
+                      <MDBMask overlay="white-slight" className="waves-light" />
+                    </MDBView>
+                    
+                    <MDBCardBody cascade className="text-center">
+                      <h2 className="head w-responsive text-center mx-auto p-1 mt-1 best ">
+                      “You can easily be a permanent resident of Canada”
 
+                      </h2>
+                      
+                     
+                      
+                      
+                    </MDBCardBody>
+      
+                  </MDBCard>
+                  </Fade>
+                   </div>
+                   <br/>
+                  
+                   <h3 className="w-responsive text-center mx-auto p-3 mt-2 ">
+                  
+                      </h3>
+
+                      <MDBContainer className="mt-1">
+                      <div className="service">
+                <ul className="list-group list-group-flush">
+                <Fade left appear><h3>  Under: </h3></Fade>
+                <ul className="list-group">
+                <MDBRow>
+                <MDBCol md="4">
+                  <Fade left appear><li className="list-group-item para"> FSW
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">FTC
+</li></Fade>
+<Fade left appear><li className="list-group-item para">FSE
+</li></Fade>
+</MDBCol>
+ <MDBCol md="4">
+                  <Fade left appear><li className="list-group-item para">Business
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">Investor 
+</li></Fade>
+<Fade left appear><li className="list-group-item para">Live-in caregiver
+</li></Fade>
+</MDBCol>
+ <MDBCol md="4">
+                  <Fade left appear><li className="list-group-item para"> PNP 
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">Canadian experience class
+</li></Fade>
+<Fade left appear><li className="list-group-item para">International graduate students 
+</li></Fade>
+</MDBCol>
+</MDBRow>
+                </ul>
+                </ul>
+                </div><br/>
+           <Fade right appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">Every category consists of various requirements. We will help you to provide a solution to your needs:</p>
+            <br/>
+         <div className="service">
+                <ul className="list-group list-group-flush">
+                <p className=" y para" md="auto">We would assess your application based on:</p>
+                <ul className="list-group">
+                <MDBRow>
+                <MDBCol md="4">
+                  <Fade left appear><li className="list-group-item para"> • Age
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">•  Education
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">• Work experience
+</li></Fade>
+
+                  <Fade left appear><li className="list-group-item para">• Whether you have a valid job offer
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">• English and/or French language skills
+</li></Fade>
+<Fade left appear><li className="list-group-item para">• Adaptability (how well you’re likely to settle here)
+</li></Fade>
+</MDBCol>
+
+</MDBRow>
+                </ul>
+                </ul> 
+                </div>         
+              </Fade>
+           
+            </MDBContainer>
+            <br/>
+            <Fade bottom appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">These factors are part of a 100-point grid used to assess eligibility. For the Federal Skilled Worker Program. You earn points for how well you do in each of the 6 factors.<br/>
+            The current pass mark is 67 points.<br/>
+            For more details or for an assessment: contact our office or email us. </p>
+            </Fade>
+      
+                </MDBCol>
+              </MDBRow> 
+            </MDBCardBody>
+          </MDBCard>
+          <br/>
+<p className="head">Business</p>
+<MDBContainer>
+            <MDBRow>
+              <MDBCol md="6" >
+                <Fade left appear><img className="serviceimage" src={business} alt="services"/></Fade>
+              </MDBCol>
+              <MDBCol md="6" >
+                <h3>OINP Entrepreneur Program</h3>
+               <p className="mx-auto p-1 mt-1 text-justify para" md="auto">The purpose of this nominee stream is to attract business owners or senior managers of businesses to the province who have the desire to either purchase an existing business or to establish their own business. Similar to many of the current business nominee streams the process is a staged process, commencing with an Expression of Interest. Applicants must wait for an official invitation before they may formally apply.</p>
+                </MDBCol>
+                </MDBRow>
+                <p className="mx-auto p-1 mt-1 text-justify para" md="auto">Once they apply, and if approved, applicants will first be nominated for a business work permit to allow them to come to the Province, meet the terms of the Performance agreement, and only once those terms have been met are they nominated for permanent residence in Canada; at which point they must still apply to the Federal Government for PR visa issuance</p>
+               <br/>
+               <h3>MPNP business  PNP </h3>               
+               <p className="mx-auto p-1 mt-1 text-justify para" md="auto">MPNP-B Manitoba Provincial Nominee Program Business Immigration is for representatives, senior directors and financial specialists hoping to move to the area of Manitoba, Canada. The base qualified speculation by the MPNP-B is $150,000 CAD in another business or in a current business in or outside Winnipeg Manitoba. Movement attorneys specialists prompt candidates with commonplace selection by the Manitoba Business Immigration and Investment Branch MPNP-B to apply for Canadian changeless inhabitant PR alongside their companion and qualified wards.</p>
+               <br/>
+               <h3>Quebec Business Class </h3>
+               <div className="service">
+                <ul className="list-group list-group-flush">
+                <ul className="list-group">
+                <li className="list-group-item para">Immigrant Investors (new criteria takes effect August 2 2018)
+                </li>
+                <li className="list-group-item para">September 10 2018 to March 15 2019 = 1500 applications
+                (limit of 1235 from China)
+                </li>
+                <li className="list-group-item para">Those with a government approval language exam showing advanced intermediate French are exempt from the quota and time frame
+                </li>
+                <li className="list-group-item para">Revised net worth of 2 million Canadian
+Revised investment level 1.2 million Canadian
+</li>
+            </ul>
+            </ul>
+            </div>
+              <br/>
+              <h3>Entrepreneurs </h3>
+              <div className="service">
+                <ul className="list-group list-group-flush">
+                <ul className="list-group">
+                <li className="list-group-item para">(new criteria takes effect August 2 2018)
+                </li>
+                <li className="list-group-item para"> August 15 2018 to March 31 2019 = 25 applications through Component One
+                <br/>&nbsp;&nbsp; -meet or exceed passing score
+                <br/>&nbsp;&nbsp; -intent to settle and operate a business in Quebec
+                <br/>&nbsp;&nbsp; -received offer of service from enterprise accelerator,enterprise incubator or university entrepreneurship center
+             
+                </li>
+                <li className="list-group-item para">August 15 2018 to March 31 2019 = 35 applications through Component Two
+                <br/>&nbsp;&nbsp; -meet or exceed passing score
+                <br/>&nbsp;&nbsp; -net worth of at least $900,000 Cdn
+                <br/>&nbsp;&nbsp; -hold alone or with spouse 25% minimum equity in business in Quebec
+               <br/>&nbsp;&nbsp; -active management
+               <br/>&nbsp;&nbsp; -investment $300,000 in Montreal or $200,000 if outside of Montreal
+                 <br/>&nbsp;&nbsp; -pay performance deposit of $200,000 Cdn (returned if conditions met)
+                 </li>
+              </ul>
+              </ul>
+              </div>
+              <br/>
+              <p className="mx-auto p-1 mt-1 text-justify para" md="auto">Those with a government approval language exam showing advanced intermediate French are exempt from the quota and time frame.</p>
+           <h3>Self Employed</h3>
+              <div className="service">
+                <ul className="list-group list-group-flush">
+                <ul className="list-group">
+                <li className="list-group-item para">(new criteria takes effect August 2 2018)
+                </li>
+                <li className="list-group-item para"> August 15 2018 to March 31 2019 = 50 applications
+                <br/>&nbsp;&nbsp; -Minimum net worth of $100,000 Cdn
+                <br/>&nbsp;&nbsp; -If destined to Montreal start up deposit of $50,0000 or more at local financial institute
+                <br/>&nbsp;&nbsp; -If destined outside of Montreal start up deposit of $25,000 at a local financial institute
+             
+                </li>
+                </ul>
+                </ul>
+                </div>
+                <br/>
+            
+
+</MDBContainer>
+
+            <MDBCard className="my-1 px-1 pb-1">
+            <br/>
+            <p className="head">Permanent residence for caregivers</p>
+            <MDBCardBody>
+           
+                <div className="w-responsive text-center mx-auto p-3 mt-2">
+      <Fade bottom appear>
+                  <MDBCard reverse>
+                  
+                    <MDBView hover cascade waves>
+                   
+                 <div className=" text-center mx-auto p-3 mt-2">
+                    <img
+                        src={caregivers}
+                        alt=""
+                        className="img-fluid" 
+                      />
+                  </div>
+                   
+                      
+                      <MDBMask overlay="white-slight" className="waves-light" />
+                    </MDBView>
+                    
+                    <MDBCardBody cascade className="text-center">
+                      <h2 className=" head text-center mx-auto p-1 mt-1 best">
+                      “Live-in caregivers”
+                      </h2>
+                    </MDBCardBody>
+      
+                  </MDBCard>
+                  </Fade>
+                   </div>
+                   <br/>
+                 
+                   <Fade bottom appear><p className=" one">We are in a transitional time wherein we have an old program as well as new pathways which will be applicable to those caregivers who may be eligible to apply for permanent residence under the economic class.
+Old criteria for ‘Live-in-caregivers’:
+Must work for 24 months FT as a live in caregiver OR acquire 3900 hours of FT experience in a live in capacity. Hours may be acquired within a maximum of 4 years or a minimum of 22 months.
+New pathways for Caregivers:
+-Caring for children
+-Caring for those with high medical needs
+Under these streams they do not have to live in and must prove 24 months of FT employment in the specified occupations. Added language level and education requirements were also introduced under these two new streams.
+Since there is a provision to allow those that have worked as Live-In Caregivers (under the older criteria) to apply for permanent residence in Canada once they have attained the pre-requisite amount of experience, there was still a need to address transitional policies to cover the processing of these types of cases under the Economic Class. 
+
+</p></Fade><br/>
+          
+              
+        
+             
+            </MDBCardBody>
+          </MDBCard>
+            
             </div>
         );
     }
