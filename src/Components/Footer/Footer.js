@@ -1,12 +1,19 @@
 //Footer of the website, visible at the bottom of every page.
 
 import React from "react";
+import { Route } from 'react-router-dom';
 import { Col, Container, Row, Footer } from "mdbreact";
 import "./Footer.css";
+import Immigration from '../../Container/Immigration/Immigration';
+import About from '../../Container/About/Aboutus/About';
 import {Modal } from 'react-bootstrap';
+
 import {Button } from 'react-bootstrap';
 import Form from '../Form/Form.js';
 import ContactUs from '../Contact/Contact';
+import Visit from "../../Container/Visit/Visit";
+import Work from "../../Container/Work/Work";
+import Study from "../../Container/Study/Study";
 
 class FooterPage extends React.Component {
  constructor(props, context) {
@@ -16,7 +23,8 @@ class FooterPage extends React.Component {
 
     this.state = {
       show: false,
-      showContact: false
+      showContact: false,
+      link:'About',linkedto:'about'
     };
   }
   
@@ -61,16 +69,16 @@ Call on: 8558076070<br/>
       <h5 className="title">Popular Pages</h5>
       <ul className="Footlinks">
         <li className="list-unstyled ">
-          <a href="#!">Family Sponsership</a>
+          <a href="Immigration">Immigration</a>
         </li>
         <li className="list-unstyled">
           <a href="#!">Spouse Sponsership</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Visit Visa</a>
+          <a href="Visit">Visit Visa</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Student Visa</a>
+          <a href="Study">Study Visa</a>
         </li>
       </ul>
       
@@ -79,20 +87,18 @@ Call on: 8558076070<br/>
       <h5 className="title">Company Info</h5>
       <ul>
         <li className="list-unstyled">
-          <a href="#!">About Us</a>
+          <a href={this.state.linkedto}>About Us</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Contact Us</a>
+          <a onClick={this.handleShowContact}>Contact Us</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">FAQs</a>
+          <a onClick={this.handleShow}>Free Appraisal</a>
         </li>
-        <li className="list-unstyled">
-          <a href="#!">In the News</a>
-        </li>
+       
       </ul>
-      <button onClick={this.handleShow} class="btn blue">Free Appraisal</button>
-<button onClick={this.handleShowContact} class="btn red">contact Us</button>
+      
+
 
       </Col>
       
@@ -139,6 +145,10 @@ Call on: 8558076070<br/>
           </Modal.Body>
          
         </Modal>
+
+
+     
+
 </div>
 );
 }

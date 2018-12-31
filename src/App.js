@@ -17,7 +17,7 @@ import Study from './Container/Study/Study';
 import Immigration from './Container/Immigration/Immigration';
 import Weather from './Container/Weather/Weather';
 import Contact from './Container/Contact/Contact';
-import Work from './Container/Work/Work';
+import USA from './Container/USA/USA';
 import Visit from './Container/Visit/Visit';
 import News from './Container/News/News';
 
@@ -36,7 +36,7 @@ class App extends Component {
     {link:'About',linkedto:'about'},
     {link:'Services',linkedto:'services'},
     {link:'Study',linkedto:'study'},
-    {link:'Work',linkedto:'work'},
+    {link:'USA Visa',linkedto:'usa'},
     {link:'Visit',linkedto:'visit'},
     {link:'Immigration',linkedto:'immigration'},
     {link:'News',linkedto:'news'},
@@ -77,7 +77,7 @@ class App extends Component {
       <Route path="/free" component={free}/>
       <Route path="/services" component={Services}/>
       <Route path="/study" component={Study}/>
-      <Route path="/work" component={Work}/>
+      <Route path="/usa" component={USA}/>
       <Route path="/visit" component={Visit}/>
       <Route path="/immigration" component={Immigration}/>
       <Route path="/news" component={News}/>

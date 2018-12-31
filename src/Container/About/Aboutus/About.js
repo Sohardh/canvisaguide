@@ -11,6 +11,7 @@ class About extends Component {
 	render() {
 		return (
 			 <MDBCard className="my-10 px-10 pb-10">
+        <p className="head"><strong>About Us</strong></p>
       <MDBCardBody>
         <MDBRow>
         
@@ -34,7 +35,7 @@ class About extends Component {
               </MDBView>
               
               <MDBCardBody cascade className="text-center">
-                <h2 className="font-weight-bold">
+                <h2 className="font-weight-bold best">
                   <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">About Canada</a>
                 </h2>
                
@@ -76,7 +77,7 @@ class About extends Component {
                 <MDBMask overlay="white-slight" className="waves-light" />
               </MDBView>
               <MDBCardBody cascade className="text-center">
-                <h2 className="font-weight-bold">
+                <h2 className="font-weight-bold best">
                   <a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/archives/backgrounders-2011/facts-canada-immigration-history.html" target="_blank">  Canada history of immigration</a>
                 </h2>
              
