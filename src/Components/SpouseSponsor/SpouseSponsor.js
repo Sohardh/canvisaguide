@@ -3,83 +3,80 @@
 
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
-
+import spousePage from '../../Assets/spousePage.jpg';
+import Fade from  'react-reveal/Fade';
 const SpouseSponsor = () => {
   return (
-    <MDBCard className="my-5 px-5 pb-5">
-      <MDBCardBody>
-        <MDBRow>
-          <MDBCol md="12">
-            <MDBCard reverse>
-              <MDBView hover cascade waves>
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg"
-                  alt=""
-                  className="img-fluid"
-                />
-                <MDBMask overlay="white-slight" className="waves-light" />
-              </MDBView>
-              <MDBCardBody cascade className="text-center">
-                <h2 className="font-weight-bold">
-                  <a href="#!">Title of the news</a>
-                </h2>
-                <p>
-                  Written by
-                  <a href="#!">
-                    <strong>Abby Madison</strong>
-                  </a>
-                  , 26/08/2018
-                </p>
-                <MDBBtn className="btn-fb waves-light">
-                  <MDBIcon icon="facebook" className="pr-2" />
-                  Facebook
-                </MDBBtn>
-                <span className="counter">46</span>
-                <MDBBtn className="btn-tw waves-light">
-                  <MDBIcon icon="twitter" className="pr-2" />
-                  Twitter
-                </MDBBtn>
-                <span className="counter">22</span>
-                <MDBBtn className="btn-gplus waves-light">
-                  <MDBIcon icon="google-plus" className="pr-2" />
-                  Google
-                </MDBBtn>
-                <span className="counter">31</span>
-                <MDBBtn color="default" className="waves-light">
-                  <MDBIcon icon="comments" className="pr-2" />
-                  Comments
-                </MDBBtn>
-                <span className="counter">18</span>
-              </MDBCardBody>
-            </MDBCard>
-            <MDBContainer className="mt-5">
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                praesentium voluptatum deleniti atque corrupti quos dolores et
-                quas molestias excepturi sint occaecati cupiditate non
-                provident, similique sunt in culpa nemo enim ipsam voluptatem
-                quia voluptas sit qui officia deserunt mollitia animi, id est
-                laborum et dolorum fuga quidem rerum facilis est distinctio.
-              </p>
-              <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere
-                possimus, omnis voluptas assumenda est, omnis dolor
-                repellendus. Quis autem vel eum iure reprehenderit qui in ea
-                voluptate velit esse quam nihil molestiae consequatur.
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae sint
-                et molestiae non recusandae itaque earum rerum.
-              </p>
+   <MDBCard className="my-1 px-1 pb-1">
+            <br/>
+           
+            <MDBCardBody>
+              <MDBRow>
+              
+                <MDBCol >
+                <div className="w-responsive text-center mx-auto p-3 mt-2">
+      <Fade bottom appear>
+                  <MDBCard reverse>
+                  
+                    <MDBView hover cascade waves>
+                   
+                 <div className="text-center mx-auto p-3 mt-2">
+                    <img
+                        src={spousePage}
+                        alt=""
+                        className="img-fluid" 
+                      />
+                  </div>
+                   
+                      
+                      <MDBMask overlay="white-slight" className="waves-light" />
+                    </MDBView>
+                    
+                    <MDBCardBody cascade className="text-center">
+                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best ">
+                      “Spouse Sponsorship”
+
+                      </h2>
+                      
+                     
+                      
+                      
+                    </MDBCardBody>
+      
+                  </MDBCard>
+                  </Fade>
+                   </div>
+                   <br/>
+                  <p className="mx-auto p-1 mt-1 text-justify para" md="auto">Companion and Common-law Sponsorship program Immigration Canada is the place Canadian natives and lasting occupants can support their qualified mate, spouse or wife, or customary law accomplice to move and live in Canada as a perpetual inhabitant.</p>
+                  <p className="mx-auto p-1 mt-1 text-justify para" md="auto">
+                  In order for the person sponsored to receive a visa and Canadian permanent resident PR from IRCC through Spouse and Common-law Sponsorship family class immigration program, the sponsor and sponsored person must prove that their relationship falls under one of three categories:
+                  </p>
+
+                      <MDBContainer className="mt-1">
+                      <div className="service">
+                <ul className="list-group list-group-flush">
+                <ul className="list-group">
+                  <Fade left appear><li className="list-group-item para"> • Spouse (wife or husband)
+</li></Fade>
+                  <Fade left appear><li className="list-group-item para">•  Common-law Partner
+
+</li></Fade>
+ <Fade left appear><li className="list-group-item para">• Conjugal Partner
+</li></Fade>
+                </ul>
+                </ul>
+                </div><br/>
+           
+            
             </MDBContainer>
-          </MDBCol>
-        </MDBRow>
-        <hr className="mb-5 mt-4" />
-        <MDBRow>
-          
-        </MDBRow>
-      </MDBCardBody>
-    </MDBCard>
+            <br/>
+       
+      
+                </MDBCol>
+              </MDBRow>
+             
+            </MDBCardBody>
+          </MDBCard>
   );
 }
 

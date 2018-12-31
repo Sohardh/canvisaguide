@@ -26,31 +26,52 @@ class PicCards extends React.Component {
  
 
   render() {
-    let cards=this.state.cards.map((card,id)=> {
-      return(
-        <MDBCol md="4" key={id}>
-           <div className='cards' onClick={this.props.Clicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
-            <MDBView waves>
-              <img
-                src={card.img}
-                className="img-fluid card"
-                alt=""
-              /> 
-              <MDBMask className="flex-center" overlay="teal-slight">
-                 <h4 className="white-text text" ><span  className="textMargin" >{card.caption}  </span></h4>
-              </MDBMask>
-            </MDBView>
-          </div>
-          </MDBCol>
-          
-
-        )
-    });
     return (
       <Fade bottom appear>
       <MDBContainer className="mt-5">
         <MDBRow className="mt-4">
-        {cards}
+         <MDBCol md="4" >
+           <div className='cards' onClick={this.props.SpouseClicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
+            <MDBView waves>
+              <img
+                src={Spouse}
+                className="img-fluid card"
+                alt=""
+              /> 
+              <MDBMask className="flex-center" overlay="teal-slight">
+                 <h4 className="white-text text" ><span  className="textMargin" > Family or spouse Sponsorship  </span></h4>
+              </MDBMask>
+            </MDBView>
+          </div>
+          </MDBCol>
+           <MDBCol md="4">
+           <div className='cards' onClick={this.props.NomineeClicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
+            <MDBView waves>
+              <img
+                src={Nominee}
+                className="img-fluid card"
+                alt=""
+              /> 
+              <MDBMask className="flex-center" overlay="teal-slight">
+                 <h4 className="white-text text" ><span  className="textMargin" >Provincial Nominee program  </span></h4>
+              </MDBMask>
+            </MDBView>
+          </div>
+          </MDBCol>
+           <MDBCol md="4" >
+           <div className='cards' onClick={this.props.ParentsClicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
+            <MDBView waves>
+              <img
+                src={Parents}
+                className="img-fluid card"
+                alt=""
+              /> 
+              <MDBMask className="flex-center" overlay="teal-slight">
+                 <h4 className="white-text text" ><span  className="textMargin" >Parents and Grandparents sponsorship </span></h4>
+              </MDBMask>
+            </MDBView>
+          </div>
+          </MDBCol>
         </MDBRow>
       </MDBContainer>
        

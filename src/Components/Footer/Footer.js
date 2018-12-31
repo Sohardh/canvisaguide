@@ -12,7 +12,6 @@ import {Button } from 'react-bootstrap';
 import Form from '../Form/Form.js';
 import ContactUs from '../Contact/Contact';
 import Visit from "../../Container/Visit/Visit";
-import Work from "../../Container/Work/Work";
 import Study from "../../Container/Study/Study";
 
 class FooterPage extends React.Component {
