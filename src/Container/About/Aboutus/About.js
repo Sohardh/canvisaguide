@@ -11,6 +11,7 @@ class About extends Component {
 	render() {
 		return (
 			 <MDBCard className="my-10 px-10 pb-10">
+        <p className="head"><strong>About Us</strong></p>
       <MDBCardBody>
         <MDBRow>
         
