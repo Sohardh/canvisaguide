@@ -11,10 +11,18 @@ import Fade from 'react-reveal/Fade';
 import { Route,Redirect } from 'react-router-dom';
 import About from '../About/Aboutus/About';
 import SpouseSponsor from '../../Components/SpouseSponsor/SpouseSponsor';
+import ParentsSponsor from '../../Components/ParentsSponsor/ParentsSponsor';
+import NomineeSponsor from '../../Components/NomineeSponsor/NomineeSponser';
 class Home extends Component {
 
-	ContinuedHandler = () => {
+	SpouseContinuedHandler = () => {
     this.props.history.replace('/spousesponsor');   //on clicking image path becomes....prev+'/parentSponsership' and hence according to the Route below it routes to that component
+    }
+    ParentsContinuedHandler = () => {
+    this.props.history.replace('/parentssponsor');   //on clicking image path becomes....prev+'/parentSponsership' and hence according to the Route below it routes to that component
+    }
+    NomineeContinuedHandler = () => {
+    this.props.history.replace('/nomineesponsor');   //on clicking image path becomes....prev+'/parentSponsership' and hence according to the Route below it routes to that component
     }
 
   render() {
@@ -22,9 +30,16 @@ let routePicCards = <Redirect to='/' /> //to enable directing to home page after
 		{			
 			routePicCards=(
 			<div>
-			<PicCards Clicked={this.ContinuedHandler}/>
-			<Route path={this.props.match.path + '/spousesponsor'} 
-			component={SpouseSponsor}/> 
+			<PicCards SpouseClicked={this.SpouseContinuedHandler} ParentsClicked={this.ParentsContinuedHandler} NomineeClicked={this.NomineeContinuedHandler}/>
+	
+      <Route path={this.props.match.path + '/spousesponsor'} 
+			component={SpouseSponsor}/>
+      <Route path={this.props.match.path + '/parentssponsor'} 
+      component={ParentsSponsor}/>  
+      <Route path={this.props.match.path + '/nomineesponsor'} 
+      component={NomineeSponsor}/> 
+      
+
 
 			</div>);
 

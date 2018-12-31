@@ -9,6 +9,30 @@
   padding: 10px;
 
 }
+.linkNews {
+    color: #7e7e7e; 
+      cursor: pointer;
+  text-decoration:none;
+  display: inline-block;
+  margin-top: 2px;
+}
+.linkNews:hover {
+ text-decoration:none;
+  color: #515151;
+}
+.linkNews:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: white;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.linkNews:hover:after {
+  width: 100%;
+background: #515151;
+}
 .btn {
   float: right;
 
@@ -19,6 +43,7 @@
   text-decoration:none;
   color: #515151;
 }
+
 .linksDrop {
    background-color: transparent;
   border:none;
@@ -59,6 +84,11 @@ background: #515151;
  .links {
     text-align: center;
     margin-left: 40%;
+    
+  }
+  .linkNews {
+    text-align: center;
+    margin-left: 43%;
     
   }
 }

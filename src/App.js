@@ -20,6 +20,8 @@ import Contact from './Container/Contact/Contact';
 import USA from './Container/USA/USA';
 import Visit from './Container/Visit/Visit';
 import News from './Container/News/News';
+import NomineeSponsor from './Components/NomineeSponsor/NomineeSponser';
+import ParentsSponsor from './Components/ParentsSponsor/ParentsSponsor';
 
 
 class App extends Component {
@@ -39,9 +41,6 @@ class App extends Component {
     {link:'USA Visa',linkedto:'usa'},
     {link:'Visit',linkedto:'visit'},
     {link:'Immigration',linkedto:'immigration'},
-    {link:'News',linkedto:'news'},
-    {link:'Weather',linkedto:'weather'},
-    {link:'Contact',linkedto:'contact'},
     ]
     };
   }
@@ -67,12 +66,48 @@ class App extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               {navlinks}    
+              <UncontrolledDropdown >
+                <DropdownToggle nav caret>
+                 <span className='linkNews'> News</span>
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <a target="_blank" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC</a>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <a target="_blank" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">IRB</a>
+                  </DropdownItem>
+                   <DropdownItem>
+                   <a target="_blank" href="https://www.immigratemanitoba.com/news-and-notices/">Manitoba</a>
+                  </DropdownItem>
+                   <DropdownItem>
+                   <a target="_blank" href="https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program/News">British Columbia </a>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <a target="_blank" href=" http://www.ontarioimmigration.ca/en/pnp/OI_PNPNEW.html">Ontario</a>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <a target="_blank" href="https://www.alberta.ca/news.aspx">Alberta</a>
+                  </DropdownItem>
+                  <DropdownItem divider />
+              
+
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <NavItem >
+              <span className='distinct'>|</span>
+                <NavLink to="weather" ><span className='links'>Weather</span><span className='distinct'>|</span></NavLink>
+        </NavItem>
+        <NavItem >
+                <NavLink to="contact" ><span className='links'>Contact</span><span className='distinct'>|</span></NavLink>
+        </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
       {/* All routes used to navigate to diferent pages in the website */}
-      
+      <Route path="/nomineesponsor" exact component={NomineeSponsor}/>
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
+      <Route path="/parentssponsor" exact component={ParentsSponsor}/>
       <Route path="/about" component={About}/>
       <Route path="/free" component={free}/>
       <Route path="/services" component={Services}/>

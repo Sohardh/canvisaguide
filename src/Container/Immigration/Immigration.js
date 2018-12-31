@@ -34,7 +34,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
                  {/* All Tables start from here*/}
 <br/>
-                 <h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+                 <h2 className="text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Canadian English Language Proficiency Index Program (CELPIP) – General Test score equivalency chart</strong>
             </h2>
 <div class='table-responsive'>
@@ -105,7 +105,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 <br/>
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className="text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>International English Language Testing System (IELTS) – General Training – Test score equivalency chart</strong>
             </h2>
 
@@ -147,7 +147,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 <br/>
 
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className=" text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Canadian English Language Proficiency Index Program (CELPIP) – General Test score equivalency chart</strong>
             </h2>
 
@@ -205,7 +205,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 </table>
 <br/>
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className="text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Test d’évaluation de français pour le Canada (TEF Canada) Test score equivalency chart</strong>
             </h2>
 
@@ -282,7 +282,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 
 
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className=" text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Test de connaissance du français pour le Canada (TCF Canada) Test score equivalency chart</strong>
             </h2>
 
@@ -369,7 +369,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 
 
 
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className=" text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>French Language proficiency </strong>
             </h2>
 
@@ -434,7 +434,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
 </table>
 
 <br/>
-<h2 className=" head text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
+<h2 className="text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>English Language proficiency </strong>
             </h2>
 
