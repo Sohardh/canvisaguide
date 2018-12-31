@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
 .image  {
 	text-align: center;
+}
+.best{
+    font-size: 2.5em;
+	font-family: 'Thasadith', sans-serif;
+	color: black;
 }

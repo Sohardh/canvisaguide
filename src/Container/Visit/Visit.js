@@ -35,7 +35,7 @@ class Visit extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className=" head text-center mx-auto p-1 mt-1 best">
+                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best">
                       “Canada is first choice to visit for every person.  Every year, Canada welcomes more than 35 million people”
                       </h2>
                     </MDBCardBody>

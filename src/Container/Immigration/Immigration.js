@@ -5,13 +5,13 @@ import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } 
 import resident from '../../Assets/resident.jpg';
 import flags from '../../Assets/image21.jpeg';
 import business from '../../Assets/business.jpg';
-import caregivers from '../../Assets/caregivers.jpg'
+import caregivers from '../../Assets/caregivers2.jpg'
 class Immigration extends Component {
     render(){
         return(
             <div>
             <p className="head"><strong>Immigration</strong></p>
-            <h2 className=" head text-center mx-auto p-1 mt-1 best">
+            <h2 className="text-center mx-auto p-1 mt-1 best">
             <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/standard-requirements/language-requirements/test-equivalency-charts.html
                 " target="_blank" ><strong>Language Test Equivalency Charts</strong></a>
 
