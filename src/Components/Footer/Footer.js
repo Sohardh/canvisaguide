@@ -14,6 +14,7 @@ import ContactUs from '../Contact/Contact';
 import Visit from "../../Container/Visit/Visit";
 import Study from "../../Container/Study/Study";
 import logofull from '../../Assets/logofull.png';
+import { SocialIcon } from 'react-social-icons';
 
 class FooterPage extends React.Component {
  constructor(props, context) {
@@ -100,7 +101,12 @@ Call on: 8558076070<br/>
         </li>
        
       </ul>
-
+    <br/>
+    <SocialIcon target="_blank" url="https://instagram.com/canvisaguide?utm_source=ig_profile_share&igshid=17mlgisdk3snm" bgColor="white" style={{ height: 50, width: 50 }} />
+     &nbsp;
+     &nbsp;<SocialIcon target="_blank" url="https://www.facebook.com/Canvisaguide/" bgColor="white" style={{ height: 50, width: 50 }} />
+&nbsp;
+     &nbsp;<SocialIcon target="_blank" url="https://www.canvisaguideinfo@gmail.com" bgColor="white" style={{ height: 50, width: 50 }} />
       </Col>
  
     </Row>

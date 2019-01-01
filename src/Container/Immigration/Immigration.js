@@ -536,38 +536,38 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
                       <MDBContainer className="mt-1">
                       <div className="service">
                 <ul className="list-group list-group-flush">
-                <Fade left appear><h3>  Under: </h3></Fade>
+                <Fade bottom appear><h3>  Under: </h3></Fade>
                 <ul className="list-group">
                 <MDBRow>
                 <MDBCol md="4">
-                  <Fade left appear><li className="list-group-item para"> FSW
+                  <Fade bottom appear><li className="list-group-item para"> FSW
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para">FTC
+                  <Fade bottom appear><li className="list-group-item para">FTC
 </li></Fade>
-<Fade left appear><li className="list-group-item para">FSE
-</li></Fade>
-</MDBCol>
- <MDBCol md="4">
-                  <Fade left appear><li className="list-group-item para">Business
-</li></Fade>
-                  <Fade left appear><li className="list-group-item para">Investor 
-</li></Fade>
-<Fade left appear><li className="list-group-item para">Live-in caregiver
+<Fade bottom appear><li className="list-group-item para">FSE
 </li></Fade>
 </MDBCol>
  <MDBCol md="4">
-                  <Fade left appear><li className="list-group-item para"> PNP 
+                  <Fade bottom appear><li className="list-group-item para">Business
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para">Canadian experience class
+                  <Fade bottom appear><li className="list-group-item para">Investor 
 </li></Fade>
-<Fade left appear><li className="list-group-item para">International graduate students 
+<Fade bottom appear><li className="list-group-item para">Live-in caregiver
+</li></Fade>
+</MDBCol>
+ <MDBCol md="4">
+                  <Fade bottom appear><li className="list-group-item para"> PNP 
+</li></Fade>
+                  <Fade bottom appear><li className="list-group-item para">Canadian experience class
+</li></Fade>
+<Fade bottom appear><li className="list-group-item para">International graduate students 
 </li></Fade>
 </MDBCol>
 </MDBRow>
                 </ul>
                 </ul>
                 </div><br/>
-           <Fade right appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">Every category consists of various requirements. We will help you to provide a solution to your needs:</p>
+           <Fade bottom appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">Every category consists of various requirements. We will help you to provide a solution to your needs:</p>
             <br/>
          <div className="service">
                 <ul className="list-group list-group-flush">
@@ -575,18 +575,18 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
                 <ul className="list-group">
                 <MDBRow>
                 <MDBCol md="4">
-                  <Fade left appear><li className="list-group-item para"> • Age
+                  <Fade bottom appear><li className="list-group-item para"> • Age
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para">•  Education
+                  <Fade bottom appear><li className="list-group-item para">•  Education
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para">• Work experience
+                  <Fade bottom appear><li className="list-group-item para">• Work experience
 </li></Fade>
 
-                  <Fade left appear><li className="list-group-item para">• Whether you have a valid job offer
+                  <Fade bottom appear><li className="list-group-item para">• Whether you have a valid job offer
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para">• English and/or French language skills
+                  <Fade bottom appear><li className="list-group-item para">• English and/or French language skills
 </li></Fade>
-<Fade left appear><li className="list-group-item para">• Adaptability (how well you’re likely to settle here)
+<Fade bottom appear><li className="list-group-item para">• Adaptability (how well you’re likely to settle here)
 </li></Fade>
 </MDBCol>
 
