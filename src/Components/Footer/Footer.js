@@ -52,6 +52,7 @@ return (
     <Row>
       <Col md="4">
       <img src={logofull}></img>
+      
       <h4 className="title">Can Visa Guide</h4>
      
       <p className="address">
@@ -63,7 +64,7 @@ Opposite to Lovely Autos, Jalandhar-144001
 *Application Submission Timing: 09:00 to 17:00<br/>
 *Passport Collection Timing: 09:00 to 17:00<br/>
 e-mail: canvisaguideinfo@gmail.com<br/>
-Call on: 8558076070<br/>
+Call on: 918054466090 <br/>
 
 
       </p>
@@ -87,7 +88,9 @@ Call on: 8558076070<br/>
       </ul>
       
       </Col>
+      
       <Col md="4">
+      
       <h5 className="title">Company Info</h5>
       <ul>
         <li className="list-unstyled">
@@ -101,14 +104,16 @@ Call on: 8558076070<br/>
         </li>
        
       </ul>
+      
     <br/>
+    
     <SocialIcon target="_blank" url="https://instagram.com/canvisaguide?utm_source=ig_profile_share&igshid=17mlgisdk3snm" bgColor="white" style={{ height: 50, width: 50 }} />
      &nbsp;
      &nbsp;<SocialIcon target="_blank" url="https://www.facebook.com/Canvisaguide/" bgColor="white" style={{ height: 50, width: 50 }} />
 &nbsp;
      &nbsp;<SocialIcon target="_blank" url="https://www.canvisaguideinfo@gmail.com" bgColor="white" style={{ height: 50, width: 50 }} />
       </Col>
- 
+      
     </Row>
     
   </Container>
