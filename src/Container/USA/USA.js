@@ -3,7 +3,6 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, M
 import hs1 from '../../Assets/statue.JPG';
 import canada2 from '../../Assets/studyusa.jpg';
 import Fade from 'react-reveal/Fade';
-import './USA.css';
 
 class USA extends Component {
 	render() {

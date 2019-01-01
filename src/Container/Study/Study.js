@@ -56,24 +56,25 @@ class Study extends Component {
                       <MDBContainer className="mt-1">
                       <div className="service">
                 <ul className="list-group list-group-flush">
-                <Fade left appear><h3>  There are a few options: </h3></Fade>
+                <Fade bottom appear><h3>  There are a few options: </h3></Fade>
                 <ul className="list-group">
-                  <Fade left appear><li className="list-group-item para"> <strong>Canada Study Permit:</strong> This is the normal way to study in Canada.
+                  <Fade bottom appear><li className="list-group-item para"> <strong>Canada Study Permit:</strong> This is the normal way to study in Canada.
 </li></Fade>
-                  <Fade left appear><li className="list-group-item para"><strong>Study without a study permit:</strong>  There are scenarios where a study permit is not needed.
+                  <Fade bottom appear><li className="list-group-item para"><strong>Study without a study permit:</strong>  There are scenarios where a study permit is not needed.
 </li></Fade>
                 </ul>
                 </ul>
                 </div><br/>
-           <Fade right appear><p className="mx-auto p-1 mt-1 para" md="auto">Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
+           <p className="mx-auto p-1 mt-1 para" md="auto"><Fade bottom appear>Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
                 Studying in Canada may provide you with the opportunity to continue to work in Canada after graduation and become a permanent resident.  
                 For those that need additional monies while studying in Canada, it is possible to work at the same time.<br/><br/>
+                </Fade><Fade bottom appear>
                 “CVG helps you to get ADMISSIONS in one of the best colleges and universities in Canada according to your eligibility “
-            </p></Fade>
+            </Fade></p>
             
             </MDBContainer>
             <br/>
-            <Fade right appear><img className="image" src={flags} alt="services"/></Fade>
+            <Fade bottom appear><img className="image" src={flags} alt="services"/></Fade>
       
                 </MDBCol>
               </MDBRow>
