@@ -42,8 +42,6 @@ class PicCards extends React.Component {
             </MDBView>
           </div>
           </MDBCol>
-
-          
            <MDBCol md="4">
            <div className='cards' onClick={this.props.NomineeClicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
             <MDBView waves>
@@ -52,7 +50,7 @@ class PicCards extends React.Component {
                 className="img-fluid card"
                 alt=""
               /> 
-            
+              
             </MDBView>
           </div>
           </MDBCol>
@@ -64,7 +62,7 @@ class PicCards extends React.Component {
                 className="img-fluid card"
                 alt=""
               /> 
-             
+              
             </MDBView>
           </div>
           </MDBCol>

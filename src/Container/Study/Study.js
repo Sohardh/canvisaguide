@@ -65,7 +65,7 @@ class Study extends Component {
                 </ul>
                 </ul>
                 </div><br/>
-           <Fade right appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
+           <Fade right appear><p className="mx-auto p-1 mt-1 para" md="auto">Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
                 Studying in Canada may provide you with the opportunity to continue to work in Canada after graduation and become a permanent resident.  
                 For those that need additional monies while studying in Canada, it is possible to work at the same time.<br/><br/>
                 “CVG helps you to get ADMISSIONS in one of the best colleges and universities in Canada according to your eligibility “
