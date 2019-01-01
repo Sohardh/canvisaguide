@@ -5,11 +5,11 @@ import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import './PicCards.css';
 import hs3o from '../../Assets/tower.jpg';
-import Spouse from '../../Assets/Spouse.jpg';
+import Spouse from '../../Assets/spouse1.png';
 import img from '../../Assets/vertical.jpg';
 import Fade from 'react-reveal/Fade';
-import Parents from '../../Assets/Parents.jpg';
-import Nominee from '../../Assets/Nominee.jpg';
+import Parents from '../../Assets/parents1.png';
+import Nominee from '../../Assets/Nominee1.png';
 import { NavLink } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import About from '../../Container/About/Aboutus/About';
@@ -38,12 +38,12 @@ class PicCards extends React.Component {
                 className="img-fluid card"
                 alt=""
               /> 
-              <MDBMask className="flex-center" overlay="teal-slight">
-                 <h4 className="white-text text" ><span  className="textMargin" > Family or spouse Sponsorship  </span></h4>
-              </MDBMask>
+             
             </MDBView>
           </div>
           </MDBCol>
+
+          
            <MDBCol md="4">
            <div className='cards' onClick={this.props.NomineeClicked} > {/*On clicking any card you will be redirected to their component page. This routing is done in the home page*/}
             <MDBView waves>
@@ -52,9 +52,7 @@ class PicCards extends React.Component {
                 className="img-fluid card"
                 alt=""
               /> 
-              <MDBMask className="flex-center" overlay="teal-slight">
-                 <h4 className="white-text text" ><span  className="textMargin" >Provincial Nominee program  </span></h4>
-              </MDBMask>
+            
             </MDBView>
           </div>
           </MDBCol>
@@ -66,9 +64,7 @@ class PicCards extends React.Component {
                 className="img-fluid card"
                 alt=""
               /> 
-              <MDBMask className="flex-center" overlay="teal-slight">
-                 <h4 className="white-text text" ><span  className="textMargin" >Parents and Grandparents sponsorship </span></h4>
-              </MDBMask>
+             
             </MDBView>
           </div>
           </MDBCol>

@@ -16,7 +16,7 @@ const FormPage = () => {
 <div className="whole " >
       <MDBRow>
         <MDBCol md="12">
-          <form action="https://mailthis.to/sohardhchobera684@gmail.com" method="POST" target="_blank" className="border border p-10">
+          <form action="https://mailthis.to/canvisaguideinfo@gmail.com" method="POST" target="_blank" className="border border p-10">
             
             <div className="grey-text">
             <MDBContainer>

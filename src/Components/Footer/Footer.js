@@ -7,12 +7,13 @@ import "./Footer.css";
 import Immigration from '../../Container/Immigration/Immigration';
 import About from '../../Container/About/Aboutus/About';
 import {Modal } from 'react-bootstrap';
-
+import Spouse from '../SpouseSponsor/SpouseSponsor';
 import {Button } from 'react-bootstrap';
 import Form from '../Form/Form.js';
 import ContactUs from '../Contact/Contact';
 import Visit from "../../Container/Visit/Visit";
 import Study from "../../Container/Study/Study";
+import logofull from '../../Assets/logofull.png';
 
 class FooterPage extends React.Component {
  constructor(props, context) {
@@ -49,20 +50,23 @@ return (
   <Container fluid className="text-center text-md-left">
     <Row>
       <Col md="4">
+      <img src={logofull}></img>
       <h4 className="title">Can Visa Guide</h4>
+     
       <p className="address">
       Find us here:<br/>
 Canada Visa Application Centre<br/>
 Aman Plaza, 3rd Floor, 310 Lajpat Nagar,<br/>
 Mahavir Marg, Nakodar Chowk<br/>
-Opposite to Lovely Autos, Jalandhar-144001<br/><br/>
+Opposite to Lovely Autos, Jalandhar-144001
 *Application Submission Timing: 09:00 to 17:00<br/>
 *Passport Collection Timing: 09:00 to 17:00<br/>
-e-mail:<br/>
+e-mail: canvisaguideinfo@gmail.com<br/>
 Call on: 8558076070<br/>
 
 
       </p>
+      
       </Col>
       <Col md="4">
       <h5 className="title">Popular Pages</h5>
@@ -71,7 +75,7 @@ Call on: 8558076070<br/>
           <a href="Immigration">Immigration</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Spouse Sponsership</a>
+          <a href="SpouseSponsor">Spouse Sponsership</a>
         </li>
         <li className="list-unstyled">
           <a href="Visit">Visit Visa</a>
@@ -96,11 +100,9 @@ Call on: 8558076070<br/>
         </li>
        
       </ul>
-      
-
 
       </Col>
-      
+ 
     </Row>
     
   </Container>
