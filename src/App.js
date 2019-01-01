@@ -68,7 +68,7 @@ class App extends Component {
               {navlinks}    
               <UncontrolledDropdown >
                 <DropdownToggle nav caret>
-                 <span className='linkNews'> News</span>
+                 <span className='linkNews'>News</span>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
