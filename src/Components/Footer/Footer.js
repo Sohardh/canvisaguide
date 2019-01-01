@@ -61,7 +61,7 @@ Mahavir Marg, Nakodar Chowk<br/>
 Opposite to Lovely Autos, Jalandhar-144001
 *Application Submission Timing: 09:00 to 17:00<br/>
 *Passport Collection Timing: 09:00 to 17:00<br/>
-e-mail:<br/>
+e-mail: canvisaguideinfo@gmail.com<br/>
 Call on: 8558076070<br/>
 
 
