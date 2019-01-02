@@ -22,7 +22,7 @@ import Visit from './Container/Visit/Visit';
 import News from './Container/News/News';
 import NomineeSponsor from './Components/NomineeSponsor/NomineeSponser';
 import ParentsSponsor from './Components/ParentsSponsor/ParentsSponsor';
-
+import Layout from './Components/Layout/Layout';
 
 class App extends Component {
 
@@ -54,21 +54,22 @@ class App extends Component {
     let navlinks=this.state.nav.map((linked,id)=>{
       return(
         <NavItem key={id}>
-                <NavLink to={linked.linkedto} ><span className='links'>{linked.link}</span><span className='distinct'>|</span></NavLink>
+                <NavLink to={linked.linkedto} ><span className='links'><strong>{linked.link}</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>);
     })
     return (
       <div >
-     
-      <Navbar color="light" light expand="md" sticky="top">
-          <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
+
+ {/* <Navbar className=" bg-danger" dark expand="md" sticky="top">
+     <NavbarBrand href="/"><strong>CanVisaGuide</strong></NavbarBrand>
+        
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               {navlinks}    
               <UncontrolledDropdown >
                 <DropdownToggle nav caret>
-                 <span className='linkNews'>News</span>
+                 <span className='linkNews'><strong>News</strong></span>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -96,15 +97,18 @@ class App extends Component {
               </UncontrolledDropdown>
               <NavItem >
               <span className='distinct'>|</span>
-                <NavLink to="weather" ><span className='links'>Weather</span><span className='distinct'>|</span></NavLink>
+                <NavLink to="weather" ><span className='links'><strong>Weather</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>
         <NavItem >
-                <NavLink to="contact" ><span className='links'>Contact</span><span className='distinct'>|</span></NavLink>
+                <NavLink to="contact" ><span className='links'><strong> Contact</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
+        */
+      }
       {/* All routes used to navigate to diferent pages in the website */}
+ <Layout>
       <Route path="/nomineesponsor" exact component={NomineeSponsor}/>
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/parentssponsor" exact component={ParentsSponsor}/>
@@ -120,7 +124,7 @@ class App extends Component {
       <Route path="/contact" component={Contact}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
- 
+</Layout>
 <br/>
      
 

@@ -1,0 +1,128 @@
+
+.link {
+
+	float: right;
+	z-index: 300;
+	width: 100%;
+	position: absolute;
+	font-size: 18px;
+	position: fixed;
+	display: flex;
+	flex-flow: row;
+	background-color:#e8112d;
+
+}
+.logo {
+	color:white;
+}
+
+
+.links {
+		display: flex;
+	flex-flow: row;
+ background-color: transparent;
+  border:none;
+  color: white;  
+  cursor: pointer;
+  text-decoration:none;
+  display: inline-block;
+  padding: 10px;
+
+}
+.linkNews {
+    color: white; 
+      cursor: pointer;
+  text-decoration:none;
+  display: inline-block;
+  margin-top: 2px;
+}
+.linkNews:hover {
+ text-decoration:none;
+}
+.linkNews:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: white;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.linkNews:hover:after {
+  width: 100%;
+}
+.btn {
+  float: right;
+
+
+  font-size: 20px;
+}
+.links:hover {
+  text-decoration:none;
+}
+
+.linksDrop {
+   background-color: transparent;
+  border:none;
+  color: black;  
+  cursor: pointer;
+  text-decoration:none;
+  display: inline-block;
+  padding: 7px;
+}
+.linksDrop:active {
+  text-decoration:none;
+  color: white;
+}
+
+.distinct {
+  color: white; 
+}
+.links:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: white;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.links:hover:after {
+  width: 100%;
+background: white;
+}
+@media(max-width:1200px ) {
+  .distinct {
+    display: none;
+  }
+ 
+}
+@media(max-width:800px ) {
+ .links {
+    text-align: center;
+    
+  }
+  .linkNews {
+    text-align: center;
+    
+  }
+}
+
+
+@media (max-width: 769px) {
+	.link {
+	    flex-flow: column;
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	   
+	}
+	.links {
+		text-align: center;
+		background-color: #e8112d;
+		flex-flow: column;
+		margin: 0;
+
+	}
+	
+}

@@ -2,7 +2,7 @@
 .links {
  background-color: transparent;
   border:none;
-  color: #7e7e7e;  
+  color: white;  
   cursor: pointer;
   text-decoration:none;
   display: inline-block;
@@ -10,7 +10,7 @@
 
 }
 .linkNews {
-    color: #7e7e7e; 
+    color: white; 
       cursor: pointer;
   text-decoration:none;
   display: inline-block;
@@ -18,7 +18,6 @@
 }
 .linkNews:hover {
  text-decoration:none;
-  color: #515151;
 }
 .linkNews:after {
   content: '';
@@ -31,7 +30,6 @@
 
 .linkNews:hover:after {
   width: 100%;
-background: #515151;
 }
 .btn {
   float: right;
@@ -41,7 +39,6 @@ background: #515151;
 }
 .links:hover {
   text-decoration:none;
-  color: #515151;
 }
 
 .linksDrop {
@@ -59,7 +56,7 @@ background: #515151;
 }
 
 .distinct {
-  color: #7e7e7e; 
+  color: white; 
 }
 .links:after {
   content: '';
@@ -72,7 +69,7 @@ background: #515151;
 
 .links:hover:after {
   width: 100%;
-background: #515151;
+background: white;
 }
 @media(max-width:1200px ) {
   .distinct {
@@ -91,4 +88,10 @@ background: #515151;
     margin-left: 43%;
     
   }
+}
+.bar {
+  background-color: red;
+}
+.main {
+  position: relative;
 }
