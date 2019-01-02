@@ -22,6 +22,7 @@ class Contact extends Component {
         <MDBCol md="4">
         
           <ContactUs/>
+          <a href="tel:+918054466090">  <button type="button" class="btn btn-outline-default waves-effect">Call Us</button></a> 
            
         </MDBCol>
       </MDBRow>
