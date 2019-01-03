@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.8002861c.chunk.css",
-  "main.js": "/static/js/main.21e13b53.chunk.js",
-  "main.js.map": "/static/js/main.21e13b53.chunk.js.map",
+  "main.css": "/static/css/main.bb42d783.chunk.css",
+  "main.js": "/static/js/main.bd49e00d.chunk.js",
+  "main.js.map": "/static/js/main.bd49e00d.chunk.js.map",
   "static/css/1.476a41d7.chunk.css": "/static/css/1.476a41d7.chunk.css",
   "static/js/1.502c86f4.chunk.js": "/static/js/1.502c86f4.chunk.js",
   "static/js/1.502c86f4.chunk.js.map": "/static/js/1.502c86f4.chunk.js.map",
@@ -35,11 +35,11 @@
   "static/media/canada3.jpg": "/static/media/canada3.762fad8f.jpg",
   "static/media/tower.jpg": "/static/media/tower.c18d3457.jpg",
   "static/media/vertical.jpg": "/static/media/vertical.b799eb57.jpg",
-  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.912ec66d.svg",
+  "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/image21.jpeg": "/static/media/image21.699beb02.jpeg",
   "static/css/1.476a41d7.chunk.css.map": "/static/css/1.476a41d7.chunk.css.map",
-  "static/css/main.8002861c.chunk.css.map": "/static/css/main.8002861c.chunk.css.map",
+  "static/css/main.bb42d783.chunk.css.map": "/static/css/main.bb42d783.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.2f78e4330e1e2bbef06aee26e1a0a958.js": "/precache-manifest.2f78e4330e1e2bbef06aee26e1a0a958.js",
+  "precache-manifest.e8a703ab96fe7333c04a6202156bb70d.js": "/precache-manifest.e8a703ab96fe7333c04a6202156bb70d.js",
   "service-worker.js": "/service-worker.js"
 }

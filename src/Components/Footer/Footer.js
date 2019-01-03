@@ -47,12 +47,15 @@ handleHideContact =() => {
 render() {
 return (
   <div className="foot">
+
 <Footer className="font-small pt-4 mt-4 ">
+
   <Container fluid className="text-center text-md-left">
     <Row>
-      <Col md="4">
-      <img src={logofull}></img>
       
+      <Col md="4">
+      
+      <img src={logofull} className="logo"></img>
       <h4 className="title">Can Visa Guide</h4>
      
       <p className="address">

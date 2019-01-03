@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 .links {
  background-color: transparent;
   border:none;
   color: white;  
   cursor: pointer;
+  color: white;
   text-decoration:none;
   display: inline-block;
   padding: 10px;
@@ -13,23 +14,32 @@
     color: white; 
       cursor: pointer;
   text-decoration:none;
+  color: white;
   display: inline-block;
   margin-top: 2px;
 }
 .linkNews:hover {
  text-decoration:none;
+
+ color: white;
+
 }
 .linkNews:after {
   content: '';
   display: block;
   height: 1px;
   width: 0;
+  color: white;
   background: white;
   transition: width .5s ease, background-color .5s ease;
 }
 
 .linkNews:hover:after {
   width: 100%;
+
+
+color: white;
+
 }
 .btn {
   float: right;
@@ -39,6 +49,9 @@
 }
 .links:hover {
   text-decoration:none;
+
+  color: white;
+
 }
 
 .linksDrop {
@@ -47,6 +60,7 @@
   color: black;  
   cursor: pointer;
   text-decoration:none;
+  color: white;
   display: inline-block;
   padding: 7px;
 }
@@ -62,6 +76,7 @@
   content: '';
   display: block;
   height: 1px;
+  color: white;
   width: 0;
   background: white;
   transition: width .5s ease, background-color .5s ease;
@@ -70,6 +85,7 @@
 .links:hover:after {
   width: 100%;
 background: white;
+
 }
 @media(max-width:1200px ) {
   .distinct {
@@ -81,17 +97,13 @@ background: white;
  .links {
     text-align: center;
     margin-left: 40%;
+    color: white;
     
   }
   .linkNews {
     text-align: center;
     margin-left: 43%;
+    color: white;
     
   }
-}
-.bar {
-  background-color: red;
-}
-.main {
-  position: relative;
 }
