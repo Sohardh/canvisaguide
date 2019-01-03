@@ -50,11 +50,17 @@ class App extends Component {
       isOpen: !this.state.isOpen
     });
   }
+  closeNavbar = () => {
+        this.setState({
+            isOpen: false
+        });
+    }
+
   render() {
     let navlinks=this.state.nav.map((linked,id)=>{
       return(
-        <NavItem key={id}>
-                <NavLink to={linked.linkedto}  ><span className='links '>{linked.link}</span><span className='distinct'>|</span></NavLink>
+        <NavItem key={id} onClick={this.closeNavbar} >
+                <NavLink to={linked.linkedto}  ><span className='links '><strong>{linked.link}</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>);
     })
     return (
@@ -68,7 +74,7 @@ class App extends Component {
               {navlinks}    
               <UncontrolledDropdown >
                 <DropdownToggle nav caret>
-                 <span className='linkNews'>News</span>
+                 <span className='linkNews'><strong>News</strong></span>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -94,16 +100,17 @@ class App extends Component {
 
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem >
+              <NavItem  onClick={this.closeNavbar} >
               <span className='distinct'>|</span>
-                <NavLink to="weather" ><span className='links'>Weather</span><span className='distinct'>|</span></NavLink>
+                <NavLink to="weather" ><span className='links'><strong>Weather</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>
-        <NavItem >
-                <NavLink to="contact" ><span className='links'>Contact</span><span className='distinct'>|</span></NavLink>
+        <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="contact" ><span className='links'><strong>Contact</strong></span><span className='distinct'>|</span></NavLink>
         </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
+
       {/* All routes used to navigate to diferent pages in the website */}
       <Route path="/nomineesponsor" exact component={NomineeSponsor}/>
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
@@ -125,7 +132,7 @@ class App extends Component {
      
 
      
-      <FooterPage/>
+      <FooterPage />
       
       </div>
     );
