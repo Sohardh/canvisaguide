@@ -47,24 +47,26 @@ handleHideContact =() => {
 render() {
 return (
   <div className="foot">
-<Footer className="font-small pt-4 mt-4">
+<Footer className="font-small pt-4 mt-4 foot">
+
   <Container fluid className="text-center text-md-left">
     <Row>
-      <Col md="4">
-      <img src={logofull}></img>
       
+      <Col md="4">
+      
+      <img src={logofull} className="logo"></img>
       <h4 className="title">Can Visa Guide</h4>
      
       <p className="address">
-      Find us here:<br/>
+      {/* Find us here:<br/>
 Canada Visa Application Centre<br/>
 Aman Plaza, 3rd Floor, 310 Lajpat Nagar,<br/>
 Mahavir Marg, Nakodar Chowk<br/>
 Opposite to Lovely Autos, Jalandhar-144001
 *Application Submission Timing: 09:00 to 17:00<br/>
-*Passport Collection Timing: 09:00 to 17:00<br/>
-e-mail: canvisaguideinfo@gmail.com<br/>
-Call on: 918054466090 <br/>
+*Passport Collection Timing: 09:00 to 17:00<br/> */}
+E-mail: canvisaguideinfo@gmail.com<br/>
+Call on: +918054466090 <br/>
 
 
       </p>

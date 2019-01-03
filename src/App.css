@@ -1,37 +1,42 @@
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 .links {
  background-color: transparent;
   border:none;
-  color: #7e7e7e;  
+  color: white;  
   cursor: pointer;
+  color: white;
   text-decoration:none;
   display: inline-block;
   padding: 10px;
 
 }
 .linkNews {
-    color: #7e7e7e; 
+    color: white; 
       cursor: pointer;
   text-decoration:none;
+  color: white;
   display: inline-block;
   margin-top: 2px;
 }
 .linkNews:hover {
  text-decoration:none;
-  color: #515151;
+ color: white;
+  color: white;
 }
 .linkNews:after {
   content: '';
   display: block;
   height: 1px;
   width: 0;
+  color: white;
   background: white;
   transition: width .5s ease, background-color .5s ease;
 }
 
 .linkNews:hover:after {
   width: 100%;
-background: #515151;
+background: white;
+color: white;
 }
 .btn {
   float: right;
@@ -41,7 +46,8 @@ background: #515151;
 }
 .links:hover {
   text-decoration:none;
-  color: #515151;
+  color: white;
+  color: white;
 }
 
 .linksDrop {
@@ -50,6 +56,7 @@ background: #515151;
   color: black;  
   cursor: pointer;
   text-decoration:none;
+  color: white;
   display: inline-block;
   padding: 7px;
 }
@@ -59,12 +66,13 @@ background: #515151;
 }
 
 .distinct {
-  color: #7e7e7e; 
+  color: white; 
 }
 .links:after {
   content: '';
   display: block;
   height: 1px;
+  color: white;
   width: 0;
   background: white;
   transition: width .5s ease, background-color .5s ease;
@@ -72,7 +80,8 @@ background: #515151;
 
 .links:hover:after {
   width: 100%;
-background: #515151;
+background: white;
+color: white;
 }
 @media(max-width:1200px ) {
   .distinct {
@@ -84,11 +93,22 @@ background: #515151;
  .links {
     text-align: center;
     margin-left: 40%;
+    color: white;
     
   }
   .linkNews {
     text-align: center;
     margin-left: 43%;
+    color: white;
     
   }
+}
+
+.brandname{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+color: black;
+background: #ff1a1a;
 }

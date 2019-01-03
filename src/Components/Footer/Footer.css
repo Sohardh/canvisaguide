@@ -24,9 +24,13 @@
 	margin-left: 150%;
 }
 .logo{
-	width: 10vw;
+	width: 10em;
+	margin-top: -5%;
 }
 .alag{
 margin-left: 80%;
 margin-top: -5%;
+}
+.foot{
+	background: #ff1a1a;
 }

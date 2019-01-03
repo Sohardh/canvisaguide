@@ -35,7 +35,7 @@ class App extends Component {
       fixed: true,
       nav:[
     {link:'Home',linkedto:'/'},
-    {link:'About',linkedto:'about'},
+    {link:'About Canada',linkedto:'about'},
     {link:'Services',linkedto:'services'},
     {link:'Study',linkedto:'study'},
     {link:'USA Visa',linkedto:'usa'},
@@ -54,14 +54,14 @@ class App extends Component {
     let navlinks=this.state.nav.map((linked,id)=>{
       return(
         <NavItem key={id}>
-                <NavLink to={linked.linkedto} ><span className='links'>{linked.link}</span><span className='distinct'>|</span></NavLink>
+                <NavLink to={linked.linkedto}  ><span className='links '>{linked.link}</span><span className='distinct'>|</span></NavLink>
         </NavItem>);
     })
     return (
       <div >
      
-      <Navbar color="light" light expand="md" sticky="top">
-          <NavbarBrand href="/">CanVisaGuide</NavbarBrand>
+      <Navbar light expand="md" sticky="top" className="nav">
+          <NavbarBrand href="/" ><h3 className="brandname">CanVisaGuide</h3></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
