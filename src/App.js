@@ -22,7 +22,13 @@ import Visit from './Container/Visit/Visit';
 import News from './Container/News/News';
 import NomineeSponsor from './Components/NomineeSponsor/NomineeSponser';
 import ParentsSponsor from './Components/ParentsSponsor/ParentsSponsor';
-
+import BusinessVisa from './Components/BusinessVisa/BusinessVisa';
+import SelfEmployed from './Components/SelfEmployed/SelfEmployed';
+import Caregivers from './Components/Caregivers/Caregivers';
+import PR from './Components/PR/PR';
+import Entrepreneur from './Components/Entrepreneur/Entrepreneur';
+import {Modal } from 'react-bootstrap';
+import Form from './Components/Form/Form'
 
 class App extends Component {
 
@@ -32,6 +38,7 @@ class App extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
+      show:false,
       fixed: true,
       nav:[
     {link:'Home',linkedto:'/'},
@@ -40,7 +47,6 @@ class App extends Component {
     {link:'Study',linkedto:'study'},
     {link:'USA Visa',linkedto:'usa'},
     {link:'Visit',linkedto:'visit'},
-    {link:'Immigration',linkedto:'immigration'},
     ]
     };
   }
@@ -55,6 +61,12 @@ class App extends Component {
             isOpen: false
         });
     }
+      handleHide=() => {
+    this.setState({ show: false });
+  }
+     handleShow=()=> {
+    this.setState({ show: true });
+  }
 
   render() {
     let navlinks=this.state.nav.map((linked,id)=>{
@@ -72,13 +84,56 @@ class App extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               {navlinks}    
+               <UncontrolledDropdown >
+                <DropdownToggle nav caret>
+                 <span className='linkNews'><strong>Immigration</strong></span>
+
+                </DropdownToggle>
+
+                <DropdownMenu right>
+
+                  <DropdownItem>
+                    <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="immigration" >Language Test Equivalency Charts</NavLink>
+                   </NavItem>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="permanentResident" >Pathway to Permanent Resident Canada</NavLink>
+                   </NavItem>
+                  </DropdownItem>
+                   <DropdownItem>
+                   <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="businessvisa" >Business Visa</NavLink>
+                   </NavItem>
+                  </DropdownItem>
+                
+                  <DropdownItem>
+                  <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="selfemployed" >Self Employed</NavLink>
+                   </NavItem>
+                  </DropdownItem>
+                  <DropdownItem>
+                   <NavItem  onClick={this.closeNavbar}>
+                <NavLink to="caregivers" >Permanent residence for caregivers
+                    </NavLink>
+                   </NavItem>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                     
+
+                </DropdownMenu>
+
+
+              </UncontrolledDropdown>
+              <span className='distinctDrop'>|</span>
               <UncontrolledDropdown >
                 <DropdownToggle nav caret>
                  <span className='linkNews'><strong>News</strong></span>
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <a target="_blank" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC</a>
+                    <a target="_blank" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC </a>
                   </DropdownItem>
                   <DropdownItem>
                    <a target="_blank" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">IRB</a>
@@ -111,7 +166,16 @@ class App extends Component {
           </Collapse>
         </Navbar>
 
+      {/*Button For free Appraisal form*/}
+        <div className="hp-ctn-howItWorks">
+    <p onClick={this.handleShow}>Free Appraisal</p>
+      </div>
+
       {/* All routes used to navigate to diferent pages in the website */}
+      <Route path="/permanentResident" component={PR}/>
+      <Route path="/caregivers" component={Caregivers}/>
+      <Route path="/selfemployed" component={SelfEmployed}/>
+         <Route path="/businessvisa" component={BusinessVisa}/>
       <Route path="/nomineesponsor" exact component={NomineeSponsor}/>
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/parentssponsor" exact component={ParentsSponsor}/>
@@ -127,9 +191,28 @@ class App extends Component {
       <Route path="/contact" component={Contact}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
+
+<Modal
+          {...this.props}
+          show={this.state.show}
+          onHide={this.handleHide}
+          dialogClassName="custom-modal"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-lg">
+             <p className="heading text-center mb-10">Free Assessment for Education and Immigration Canada</p>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+             <Form/>
+            </p>
+          </Modal.Body>
+         
+        </Modal>
+
  
 <br/>
-     
 
      
       <FooterPage />
