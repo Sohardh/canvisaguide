@@ -6,7 +6,13 @@ import flags from '../../Assets/image21.jpeg'
 import './study.css';
 
 class Study extends Component {
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
+
     render(){
+     
         return(
             <MDBCard className="my-1 px-1 pb-1">
             <br/>

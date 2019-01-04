@@ -4,6 +4,11 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreac
 import ContactUs from '../../Components/Contact/Contact';
 
 class Contact extends Component {
+    componentWillMount = function() {
+        if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+    }
+    
+
     render(){
         return(
            <div>

@@ -7,7 +7,13 @@ import flags from '../../Assets/image21.jpeg';
 import business from '../../Assets/business.jpg';
 import caregivers from '../../Assets/caregivers2.jpg'
 class Immigration extends Component {
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
+
     render(){
+      
         return(
             <div>
             <p className="head"><strong>Immigration</strong></p>

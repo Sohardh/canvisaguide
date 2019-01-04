@@ -3,7 +3,13 @@ import ReactWeather from 'react-open-weather';
 import 'react-open-weather/lib/css/ReactWeather.css';
 
 class Weather extends Component {
+    componentWillMount = function() {
+        if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+    }
+    
+  
     render(){
+        
         return(
             <div>
                 <p className="head"><strong>Weather In Canada</strong></p>

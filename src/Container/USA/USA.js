@@ -5,7 +5,13 @@ import canada2 from '../../Assets/studyusa.jpg';
 import Fade from 'react-reveal/Fade';
 
 class USA extends Component {
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
+
 	render() {
+  
 		return (
             
 			 <MDBCard className="my-10 px-10 pb-10">

@@ -14,6 +14,10 @@ import SpouseSponsor from '../../Components/SpouseSponsor/SpouseSponsor';
 import ParentsSponsor from '../../Components/ParentsSponsor/ParentsSponsor';
 import NomineeSponsor from '../../Components/NomineeSponsor/NomineeSponser';
 class Home extends Component {
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
 
 	SpouseContinuedHandler = () => {
     this.props.history.replace('/spousesponsor');   //on clicking image path becomes....prev+'/parentSponsership' and hence according to the Route below it routes to that component
@@ -26,6 +30,7 @@ class Home extends Component {
     }
 
   render() {
+  
 let routePicCards = <Redirect to='/' /> //to enable directing to home page after reloading(refreshing) 
 		{			
 			routePicCards=(

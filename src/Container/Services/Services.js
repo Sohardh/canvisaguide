@@ -7,7 +7,13 @@ import services from '../../Assets/services.jpg';
 import services1 from '../../Assets/services1.jpg';
 
 class Services extends Component {
+    componentWillMount = function() {
+        if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+    }
+    
+    
     render(){
+       
         return(
             <div className="font">
             

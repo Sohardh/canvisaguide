@@ -8,7 +8,13 @@ import canada3 from '../../../Assets/canada3.jpg';
 import Fade from 'react-reveal/Fade';
 import './About.css'
 class About extends Component {
+ 
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
 	render() {
+   
 		return (
 			 <MDBCard className="my-10 px-10 pb-10">
         <p className="head"><strong>About Canada</strong></p>

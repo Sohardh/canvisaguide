@@ -7,7 +7,13 @@ import nigara from '../../Assets/nigara.jpg';
 
 
 class Visit extends Component {
+  componentWillMount = function() {
+    if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
+}
+
+
     render(){
+    
         return(
             <MDBCard className="my-1 px-1 pb-1">
             <br/>
