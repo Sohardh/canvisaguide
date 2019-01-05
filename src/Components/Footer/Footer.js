@@ -79,7 +79,7 @@ Call on: +918054466090 <br/>
           <a href="Immigration">Immigration</a>
         </li>
         <li className="list-unstyled">
-          <a href="SpouseSponsor">Spouse Sponsership</a>
+          <a href="SpouseSponsor">Spouse Sponsorship</a>
         </li>
         <li className="list-unstyled">
           <a href="Visit">Visit Visa</a>
@@ -88,27 +88,34 @@ Call on: +918054466090 <br/>
           <a href="Study">Study Visa</a>
         </li>
       </ul>
+      <ul>
+      <li className="list-unstyled">
+          <a onClick={this.handleShowContact}>Contact Us</a>
+        </li>
+        <li className="list-unstyled">
+          <a onClick={this.handleShow}>Free Assessment</a>
+        </li>
+        </ul>
       
       </Col>
       
       <Col md="4">
       
-      <h5 className="title">Company Info</h5>
+      <h5 className="title">Vision</h5>
       <ul>
         <li className="list-unstyled">
-          <a href={this.state.linkedto}>About Us</a>
+          "Know - How to Win."
         </li>
-        <li className="list-unstyled">
-          <a onClick={this.handleShowContact}>Contact Us</a>
-        </li>
-        <li className="list-unstyled">
-          <a onClick={this.handleShow}>Free Appraisal</a>
-        </li>
-       
       </ul>
-      
-    <br/>
+      <h5 className="title">Mission</h5>
+      <ul>
+        <li className="list-unstyled">
+          "Our Mission - Client Focused, Results Driven"
+        </li>
+      </ul>
     
+      
+ 
     <SocialIcon target="_blank" url="https://instagram.com/canvisaguide?utm_source=ig_profile_share&igshid=17mlgisdk3snm" bgColor="white" style={{ height: 50, width: 50 }} />
      &nbsp;
      &nbsp;<SocialIcon target="_blank" url="https://www.facebook.com/Canvisaguide/" bgColor="white" style={{ height: 50, width: 50 }} />
@@ -117,10 +124,11 @@ Call on: +918054466090 <br/>
       </Col>
       
     </Row>
+    <br/>
     
   </Container>
   <div className="footer-copyright text-center py-3">
-    <Container fluid>
+    <Container fluid className="copy">
       &copy; {new Date().getFullYear()} Copyright:{" "}
       <a href="https://www.canvisaguide.com"> canvisaguide.com</a>
 

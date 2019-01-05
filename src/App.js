@@ -168,8 +168,11 @@ class App extends Component {
 
       {/*Button For free Appraisal form*/}
         <div className="hp-ctn-howItWorks">
-    <p onClick={this.handleShow}>Free Appraisal</p>
+    <p onClick={this.handleShow}>Free Assessment</p>
       </div>
+
+      
+    
 
       {/* All routes used to navigate to diferent pages in the website */}
       <Route path="/permanentResident" component={PR}/>
