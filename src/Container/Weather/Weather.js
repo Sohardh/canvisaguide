@@ -18,7 +18,35 @@ class Weather extends Component {
     		apikey="47a0a4f1cc10405b9f2173230182912"
     		type="city"
     		forecast="5days"
-    		city="ottawa"/>	
+    		city="ottawa"/>	<br/>
+            <ReactWeather
+    		forecast="today"
+    		apikey="47a0a4f1cc10405b9f2173230182912"
+    		type="city"
+    		forecast="5days"
+    		city="toronto"/>	
+
+<ReactWeather
+    		forecast="today"
+    		apikey="47a0a4f1cc10405b9f2173230182912"
+    		type="city"
+    		forecast="5days"
+    		city="vancouver"/>
+            <ReactWeather
+    		forecast="today"
+    		apikey="47a0a4f1cc10405b9f2173230182912"
+    		type="city"
+    		forecast="5days"
+    		city="montreal"/>	
+
+<ReactWeather
+    		forecast="today"
+    		apikey="47a0a4f1cc10405b9f2173230182912"
+    		type="city"
+    		forecast="5days"
+    		city="calgary"/>
+            	
+
             </div>
         );
     }
