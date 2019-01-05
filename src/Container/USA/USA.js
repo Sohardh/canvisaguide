@@ -88,7 +88,7 @@ class USA extends Component {
             </MDBCard>
             </Fade>
             </div>
-            <MDBContainer className="mt-5">
+            <MDBContainer className="mt-5 text-justify">
                <Fade bottom appear><p>
                The USA continues to be the top choice for students planning to study abroad. If you are among the few who aspire and have gotten the admission into your aspired university, applying for Student Visa is the next important step to realizing your Study in USA dream.
               </p></Fade>

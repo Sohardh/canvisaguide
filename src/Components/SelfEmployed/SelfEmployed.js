@@ -20,7 +20,7 @@ class SelfEmployed extends Component {
                 <ul className="list-group">
                 <li className="list-group-item para">(new criteria takes effect August 2 2018)
                 </li>
-                <li className="list-group-item para"> August 15 2018 to March 31 2019 = 50 applications
+                <li className="list-group-item  "> August 15 2018 to March 31 2019 = 50 applications
                 <br/>&nbsp;&nbsp; -Minimum net worth of $100,000 Cdn
                 <br/>&nbsp;&nbsp; -If destined to Montreal start up deposit of $50,0000 or more at local financial institute
                 <br/>&nbsp;&nbsp; -If destined outside of Montreal start up deposit of $25,000 at a local financial institute

@@ -7,6 +7,7 @@ import ParentsPage from '../../Assets/ParentsPage.jpg';
 import Fade from  'react-reveal/Fade';
 
 const ParentsSponsor = () => {
+  if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
   return (
    <MDBCard className="my-1 px-1 pb-1">
             <br/>

@@ -24,20 +24,20 @@ class Weather extends Component {
     		apikey="47a0a4f1cc10405b9f2173230182912"
     		type="city"
     		forecast="5days"
-    		city="toronto"/>	
+    		city="toronto"/>	<br/>
 
 <ReactWeather
     		forecast="today"
     		apikey="47a0a4f1cc10405b9f2173230182912"
     		type="city"
     		forecast="5days"
-    		city="vancouver"/>
+    		city="vancouver"/><br/>
             <ReactWeather
     		forecast="today"
     		apikey="47a0a4f1cc10405b9f2173230182912"
     		type="city"
     		forecast="5days"
-    		city="montreal"/>	
+    		city="montreal"/>	<br/>
 
 <ReactWeather
     		forecast="today"

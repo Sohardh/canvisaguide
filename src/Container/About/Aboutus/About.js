@@ -92,11 +92,11 @@ class About extends Component {
             </Fade>
             </div>
             <MDBContainer className="mt-5">
-               <Fade bottom appear><p>
+               <Fade bottom appear><p className="text-justify"> 
               Canada is often referred to as a land of immigrants because millions of newcomers have settled here and helped to build and defend our way of life, starting with settlers from France and England.
               </p></Fade>
               <h2 className="font-weight-bold">What does IRCC stand FOR ?</h2>
-               <Fade bottom appear><p>Immigration, Refugees and Citizenship Canada facilitates the arrival of immigrants, provides protection to refugees, and offers programming to help newcomers settle in Canada. 
+               <Fade bottom appear><p className="text-justify">Immigration, Refugees and Citizenship Canada facilitates the arrival of immigrants, provides protection to refugees, and offers programming to help newcomers settle in Canada. 
                 <br/>
                 <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">For more Information.....</a>
               </p></Fade>

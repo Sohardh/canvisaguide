@@ -71,7 +71,7 @@ class Study extends Component {
                 </ul>
                 </ul>
                 </div><br/>
-           <p className="mx-auto p-1 mt-1 para" md="auto"><Fade bottom appear>Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
+           <p className="mx-auto p-1 mt-1 para text-justify" md="auto"><Fade bottom appear>Contact us to provide an initial assessment for those who wish to pursue studies in Canada.  We offer services from admission to visa application.<br/><br/>
                 Studying in Canada may provide you with the opportunity to continue to work in Canada after graduation and become a permanent resident.  
                 For those that need additional monies while studying in Canada, it is possible to work at the same time.<br/><br/>
                 </Fade><Fade bottom appear>

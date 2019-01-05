@@ -48,7 +48,7 @@ class Caregivers extends Component {
                    </div>
                    <br/>
                  
-                   <Fade bottom appear><p className=" one">We are in a transitional time wherein we have an old program as well as new pathways which will be applicable to those caregivers who may be eligible to apply for permanent residence under the economic class.
+                   <Fade bottom appear><p className=" one text-justify">We are in a transitional time wherein we have an old program as well as new pathways which will be applicable to those caregivers who may be eligible to apply for permanent residence under the economic class.
 Old criteria for ‘Live-in-caregivers’:
 Must work for 24 months FT as a live in caregiver OR acquire 3900 hours of FT experience in a live in capacity. Hours may be acquired within a maximum of 4 years or a minimum of 22 months.
 New pathways for Caregivers:
