@@ -15,6 +15,26 @@ class SelfEmployed extends Component {
       return(
 <MDBContainer>
 <p className="head">Self Employed</p>
+ <Fade bottom appear><p className="responsive "> The person must intend and able to be self-employed in Canada. 
+            <br/> <br/>
+           We access you on selection criteria:
+             </p></Fade>
+             <Fade bottom appear> <div className="service">
+                <ul className="list-group list-group-flush">
+                <ul className="list-group">
+                <li className="list-group-item para">-experience
+                </li>
+                <li className="list-group-item  ">-education  </li>
+                <li className="list-group-item  ">-age  </li>
+                <li className="list-group-item  ">-language abilities  </li>
+                 <li className="list-group-item  ">-adaptability </li>
+                </ul>
+                </ul>
+                </div></Fade><br/>
+                <Fade bottom appear><p className="responsive ">Based upon IRCC minimum passing marks required currently is 35 out of 100.
+           <br/> <br/>
+
+             </p></Fade>
               <div className="service">
                 <ul className="list-group list-group-flush">
                 <ul className="list-group">
@@ -29,6 +49,8 @@ class SelfEmployed extends Component {
                 </ul>
                 </ul>
                 </div>
+                <br/>
+                     <p className="responsive ">     <strong> Contact CVG for details or detailed assessment.</strong></p>
             </MDBContainer>
             );
   }

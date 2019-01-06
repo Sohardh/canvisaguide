@@ -123,7 +123,7 @@ background: #ff1a1a;
 .hp-ctn-howItWorks {
     padding:0px 0px 0px 0px;
     text-align: center;
-    margin:0px;
+     margin-top: 50px;
     width: 160px;
     height:40px;
     background:#ff1a1a;
@@ -139,6 +139,30 @@ background: #ff1a1a;
     cursor: pointer;
 }
 .hp-ctn-howItWorks p {
+    color:#fff;
+    display:inline-block;
+    line-height:40px;
+}
+.btnContact {
+  padding:0px 0px 0px 0px;
+    text-align: center;
+  
+    margin-top: 250px;
+    width: 160px;
+    height:40px;
+    background:#ff1a1a;
+    z-index:15;
+    border-radius: 5px 5px 0px 0px;
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform-origin: bottom right;
+    position: fixed;
+    right: 0px;
+    cursor: pointer;
+}
+.btnContact p{
     color:#fff;
     display:inline-block;
     line-height:40px;

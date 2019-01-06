@@ -28,8 +28,8 @@ import Caregivers from './Components/Caregivers/Caregivers';
 import PR from './Components/PR/PR';
 import Entrepreneur from './Components/Entrepreneur/Entrepreneur';
 import {Modal } from 'react-bootstrap';
-import Form from './Components/Form/Form';
-
+import Form from './Components/Form/Form'
+import ContactUs from './Components/Contact/Contact';
 
 class App extends Component {
 
@@ -46,8 +46,8 @@ class App extends Component {
     {link:'About Canada',linkedto:'about'},
     {link:'Services',linkedto:'services'},
     {link:'Study',linkedto:'study'},
-    {link:'Visit',linkedto:'visit'},
     {link:'USA Visa',linkedto:'usa'},
+    {link:'Visit',linkedto:'visit'},
     {link:'Coaching Station', linkedto:'coachingstation'}
     ]
     };
@@ -68,6 +68,12 @@ class App extends Component {
   }
      handleShow=()=> {
     this.setState({ show: true });
+  }
+    handleShowContact =() => {
+     this.setState({ showContact: true });
+  }
+handleHideContact =() => {
+    this.setState({ showContact: false });
   }
 
   render() {
@@ -172,6 +178,9 @@ class App extends Component {
         <div className="hp-ctn-howItWorks">
     <p onClick={this.handleShow}>Free Assessment</p>
       </div>
+      <div className="btnContact">
+    <p onClick={this.handleShowContact}>Contact Us</p>
+      </div>
 
       
     
@@ -185,17 +194,19 @@ class App extends Component {
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/parentssponsor" exact component={ParentsSponsor}/>
       <Route path="/about" component={About}/>
-      <Route path="/freeassesment" component={free}/>
+      <Route path="/free" component={free}/>
       <Route path="/services" component={Services}/>
       <Route path="/study" component={Study}/>
       <Route path="/usa" component={USA}/>
       <Route path="/visit" component={Visit}/>
       <Route path="/immigration" component={Immigration}/>
       <Route path="/coachingstation" component={Coaching}/>
+   
       <Route path="/weather" component={Weather}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
+
 <Modal
           {...this.props}
           show={this.state.show}
@@ -210,6 +221,35 @@ class App extends Component {
           <Modal.Body>
             <p>
              <Form/>
+            </p>
+          </Modal.Body>
+         
+        </Modal>
+              <Modal
+          {...this.props}
+          show={this.state.showContact}
+          onHide={this.handleHideContact}
+          dialogClassName="custom-modal"
+        >
+       
+          <Modal.Body>
+            <p>
+             <ContactUs/>
+            </p>
+          </Modal.Body>
+         
+        </Modal>
+
+              <Modal
+          {...this.props}
+          show={this.state.showContact}
+          onHide={this.handleHideContact}
+          dialogClassName="custom-modal"
+        >
+       
+          <Modal.Body>
+            <p>
+             <ContactUs/>
             </p>
           </Modal.Body>
          

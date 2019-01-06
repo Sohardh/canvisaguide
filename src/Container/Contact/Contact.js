@@ -13,17 +13,16 @@ class Contact extends Component {
     render(){
         return(
            <div>
-           <br/>
            <MDBContainer>
             <MDBRow>
-            <MDBCol md="6">
+            <MDBCol md="2">
 		
 		</MDBCol>
      
-        <MDBCol md="9">
+        <MDBCol md="8">
         
           <ContactUs/>
-          <a href="tel:+918054466090">  <button type="button" class="btn btn-outline-default waves-effect">Call Us</button></a> 
+          <a href="tel:+918054466090">  <button type="button" className="btn btn-outline-default waves-effect">Call Us</button></a> 
            
         </MDBCol>
       </MDBRow>
