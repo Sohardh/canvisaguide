@@ -19,7 +19,7 @@ import Weather from './Container/Weather/Weather';
 import Contact from './Container/Contact/Contact';
 import USA from './Container/USA/USA';
 import Visit from './Container/Visit/Visit';
-import News from './Container/News/News';
+import Coaching from './Container/Coaching/Coaching';
 import NomineeSponsor from './Components/NomineeSponsor/NomineeSponser';
 import ParentsSponsor from './Components/ParentsSponsor/ParentsSponsor';
 import BusinessVisa from './Components/BusinessVisa/BusinessVisa';
@@ -28,7 +28,8 @@ import Caregivers from './Components/Caregivers/Caregivers';
 import PR from './Components/PR/PR';
 import Entrepreneur from './Components/Entrepreneur/Entrepreneur';
 import {Modal } from 'react-bootstrap';
-import Form from './Components/Form/Form'
+import Form from './Components/Form/Form';
+
 
 class App extends Component {
 
@@ -45,8 +46,9 @@ class App extends Component {
     {link:'About Canada',linkedto:'about'},
     {link:'Services',linkedto:'services'},
     {link:'Study',linkedto:'study'},
-    {link:'USA Visa',linkedto:'usa'},
     {link:'Visit',linkedto:'visit'},
+    {link:'USA Visa',linkedto:'usa'},
+    {link:'Coaching Station', linkedto:'coachingstation'}
     ]
     };
   }
@@ -183,18 +185,17 @@ class App extends Component {
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/parentssponsor" exact component={ParentsSponsor}/>
       <Route path="/about" component={About}/>
-      <Route path="/free" component={free}/>
+      <Route path="/freeassesment" component={free}/>
       <Route path="/services" component={Services}/>
       <Route path="/study" component={Study}/>
       <Route path="/usa" component={USA}/>
       <Route path="/visit" component={Visit}/>
       <Route path="/immigration" component={Immigration}/>
-      <Route path="/news" component={News}/>
+      <Route path="/coachingstation" component={Coaching}/>
       <Route path="/weather" component={Weather}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/profile" exact component={Profile}/>
       <Route path="/" exact component={Home}/>
-
 <Modal
           {...this.props}
           show={this.state.show}

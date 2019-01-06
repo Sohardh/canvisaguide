@@ -123,8 +123,7 @@ background: #ff1a1a;
 .hp-ctn-howItWorks {
     padding:0px 0px 0px 0px;
     text-align: center;
-  
-    margin-top: 60%;
+    margin:0px;
     width: 160px;
     height:40px;
     background:#ff1a1a;

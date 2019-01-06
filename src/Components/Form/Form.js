@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput,MDBSelect,
   MDBSelectInput,
   MDBSelectOptions,
@@ -6,17 +6,32 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput,MDBSelect,
   import ReCAPTCHA from "react-google-recaptcha";
   import './Form.css';
 
-const FormPage = () => {
-  function onChange(value) {
-    console.log("Captcha value:", value);
+class FormPage extends Component  {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: ''
+    };
   }
+  
+  
+  
+  render(){
+    function onChange(value) {
+      console.log("Captcha value:", value);
+    }
+
+    
+
+
+
   return (
     <MDBContainer>
       
 <div className="whole " >
       <MDBRow>
         <MDBCol md="12">
-          <form action="https://mailthis.to/canvisaguideinfo@gmail.com" method="POST" target="_blank" className="border border p-10">
+          <form action="https://formspree.io/canvisaguideinfo@gmail.com?subject=New Mail from a Client" method="POST" target="_blank" className="border border p-10">
             
             <div className="grey-text">
             <MDBContainer>
@@ -57,7 +72,11 @@ const FormPage = () => {
                 class="form-control"
                 success="right"
                 name="reply_to"
+                value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)}
               />
+                 
+        
+             
               <MDBInput
                 label="Telephone Number"
                 icon="phone" 
@@ -108,19 +127,49 @@ const FormPage = () => {
               <label class="custom-control-label" for="defaultChecked">No</label>
             </div>
                 </div>
-             
-
+                <div class="blockquote bq-primary didyou">
+                <p  name="English Skills">Your English Language Skills -</p>
                 <MDBInput
-                label="Your English Language Skills"
+                label="Listening"
                 group
-                icon="graduation-cap" 
                 type="text"
                 validate
                 class="form-control"
                 error="wrong"
                 success="right"
-                name="English-Skill"
+                name="Listening"
               />
+              <MDBInput
+                label="Reading"
+                group
+                type="text"
+                validate
+                class="form-control"
+                error="wrong"
+                success="right"
+                name="Reading"
+              />
+              <MDBInput
+                label="Writing"
+                group
+                type="text"
+                validate
+                class="form-control"
+                error="wrong"
+                success="right"
+                name="Writing"
+              />
+               <MDBInput
+                label="Speaking"
+                group
+                type="text"
+                validate
+                class="form-control"
+                error="wrong"
+                success="right"
+                name="Speaking"
+              />
+              </div>
                 <div class="blockquote bq-primary">
     
     <p >Did you take the TEF French Test? </p>
@@ -191,7 +240,6 @@ const FormPage = () => {
               />
               
 
-                 
            
                 
 
@@ -207,7 +255,8 @@ const FormPage = () => {
     sitekey="6LeHwIMUAAAAAFMBRk6blWmfvsVQCPjTJq2e8jRG"
     onChange={onChange}
   />
-              <MDBBtn color="primary" type = 'submit' className="form-control">Register</MDBBtn>
+
+              <MDBBtn color="primary" type = 'submit' className="form-control" >Register</MDBBtn>
             </div>
           </form>
         </MDBCol>
@@ -215,6 +264,17 @@ const FormPage = () => {
       </div>
     </MDBContainer>
   );
+  
+  }updateInputValue(evt) {
+    this.setState({
+      inputValue: evt.target.value
+    });
+  }
+
+  
+
+
 };
+
 
 export default FormPage;

@@ -13,6 +13,7 @@ import About from '../About/Aboutus/About';
 import SpouseSponsor from '../../Components/SpouseSponsor/SpouseSponsor';
 import ParentsSponsor from '../../Components/ParentsSponsor/ParentsSponsor';
 import NomineeSponsor from '../../Components/NomineeSponsor/NomineeSponser';
+
 class Home extends Component {
   componentWillMount = function() {
     if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
