@@ -10,7 +10,8 @@ class FormPage extends Component  {
   constructor(props) {
     super(props);
     this.state = {
-      inputValue: ''
+      inputValue: '',
+      value:'fsafhasdhfhasdjkfhafjdsahflhasdfjlashjfdsas'
     };
   }
   
@@ -74,7 +75,7 @@ class FormPage extends Component  {
                 name="reply_to"
                 value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)}
               />
-                 
+                 {this.state.inputValue}
         
              
               <MDBInput
@@ -267,10 +268,15 @@ class FormPage extends Component  {
               <MDBBtn color="primary" type = 'submit' className="form-control" >Register</MDBBtn>
             </div>
           </form>
+
+
+         
+
         </MDBCol>
       </MDBRow>
       </div>
     </MDBContainer>
+
   );
   
   }updateInputValue(evt) {
@@ -281,8 +287,15 @@ class FormPage extends Component  {
 
   
 
+  
 
 };
 
 
 export default FormPage;
+
+// <form action = {"https://mailthis.to/"+this.state.inputValue} method="POST" target="_blank">
+// <MDBInput value={this.state.value} name="reply"/> 
+   
+//      <MDBBtn color="primary" type = 'submit' className="form-control" >Register</MDBBtn>
+//     </form>
