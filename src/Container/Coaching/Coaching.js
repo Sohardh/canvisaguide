@@ -134,9 +134,7 @@ class Coaching extends Component {
          
           </MDBCol>
         </MDBRow>
-      
-       
-       
+
       </MDBCardBody>
     </MDBCard>
   );

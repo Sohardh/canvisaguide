@@ -31,7 +31,7 @@ class FormPage extends Component  {
 <div className="whole " >
       <MDBRow>
         <MDBCol md="12">
-          <form action="https://formspree.io/canvisaguideinfo@gmail.com?subject=New Mail from a Client" method="POST" target="_blank" className="border border p-10">
+          <form action="https://mailthis.to/canvisaguideinfo@gmail.com" method="POST" target="_blank" className="border border p-10">
             
             <div className="grey-text">
             <MDBContainer>
@@ -129,6 +129,14 @@ class FormPage extends Component  {
                 </div>
                 <div class="blockquote bq-primary didyou">
                 <p  name="English Skills">Your English Language Skills -</p>
+                <div class="custom-control custom-radio" >
+              <input type="radio" class="custom-control-input form-control" id="gadefaultUnchecked" name="General or Academic" value="General"/>
+              <label class="custom-control-label" for="gadefaultUnchecked">General</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input form-control" id="gadefaultChecked" name="General or Academic" value="Academic"/>
+              <label class="custom-control-label" for="gadefaultChecked">Academic</label>
+            </div>
                 <MDBInput
                 label="Listening"
                 group

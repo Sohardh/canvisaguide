@@ -66,9 +66,12 @@ Opposite to Lovely Autos, Jalandhar-144001
 *Application Submission Timing: 09:00 to 17:00<br/>
 *Passport Collection Timing: 09:00 to 17:00<br/> */}
 E-mail: canvisaguideinfo@gmail.com<br/>
-Call on: +918054466090 <br/>
+Call on: <br/> 
 
+India - +918054466090 <br/>
+Others - +1(204)9526090<br/>
 
+ 
       </p>
       
       </Col>

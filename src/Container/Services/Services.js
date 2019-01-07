@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import service from '../../Assets/service.jpg';
 import services from '../../Assets/services.jpg';
 import services1 from '../../Assets/services1.jpg';
+import denied from '../../Assets/denied.jpg';
 
 class Services extends Component {
     componentWillMount = function() {
@@ -43,6 +44,7 @@ class Services extends Component {
                 <MDBRow className="mt-4">
                 <MDBCol md="6" >
                 <Fade left appear><img className="serviceimage1" src={services} alt="services"/></Fade>
+                <Fade left appear><img className="serviceimage1" src={denied} alt="services"/></Fade>
                 </MDBCol>
                 <MDBCol md="6" >
                 <div className="service1">
@@ -56,13 +58,14 @@ class Services extends Component {
                   <Fade right appear><li className="list-group-item"> Alberta Immigrant Nominee Program  </li></Fade>
                   <Fade right appear><li className="list-group-item"> Ontario Provincial Nominee Program    </li></Fade>
                   <Fade right appear><li className="list-group-item"> Student visa   </li></Fade>
+                  <Fade right appear><li className="list-group-item"> Refusal Cases Expertise   </li></Fade>
                   <Fade right appear><li className="list-group-item">Investor programs    </li>  </Fade>
                   <Fade right appear><li className="list-group-item"> Business programs   </li></Fade>  
                   <Fade right appear><li className="list-group-item"> Entrepreneur  programs   </li></Fade>  
                   <Fade right appear><li className="list-group-item"> Family Sponsorship  </li></Fade>  
                   <Fade right appear><li className="list-group-item"> Spousal and Dependent Sponsorship    </li></Fade>  
                   <Fade right appear><li className="list-group-item"> Family Sponsorships     </li></Fade>
-                  <Fade right appear><li className="list-group-item"> PHD graduate Permanent Resident application      </li></Fade> 
+                  <Fade right appear><li className="list-group-item"> Post graduate work permit      </li></Fade> 
                   <Fade right appear><li className="list-group-item"> Work Permits      </li></Fade> 
                   <Fade right appear><li className="list-group-item"> Canada Federal Skilled Workers      </li></Fade>  
                   <Fade right appear><li className="list-group-item"> Canada Federal Trades Workers      </li> </Fade>
