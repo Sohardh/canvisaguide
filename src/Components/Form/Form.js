@@ -11,7 +11,7 @@ class FormPage extends Component  {
     super(props);
     this.state = {
       inputValue: '',
-      value:'fsafhasdhfhasdjkfhafjdsahflhasdfjlashjfdsas'
+      value:''
     };
   }
   
@@ -32,7 +32,7 @@ class FormPage extends Component  {
 <div className="whole " >
       <MDBRow>
         <MDBCol md="12">
-          <form action="https://mailthis.to/canvisaguideinfo@gmail.com" method="POST" target="_blank" className="border border p-10">
+          <form id="gform" data-email="canvisaguideinfo@gmail.com" action="https://script.google.com/macros/s/AKfycbxNCI6TpF4bRz9_t--is3RzLXqUe4tWiUQTwucjXB30pe3HgG0/exec" method="POST" target="_blank" >
             
             <div className="grey-text">
             <MDBContainer>
@@ -72,10 +72,10 @@ class FormPage extends Component  {
                 error="wrong"
                 class="form-control"
                 success="right"
-                name="reply_to"
+                name="email"
                 value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)}
               />
-                 {this.state.inputValue}
+              
         
              
               <MDBInput
@@ -264,7 +264,7 @@ class FormPage extends Component  {
     sitekey="6LeHwIMUAAAAAFMBRk6blWmfvsVQCPjTJq2e8jRG"
     onChange={onChange}
   />
-
+{this.state.email}
               <MDBBtn color="primary" type = 'submit' className="form-control" >Register</MDBBtn>
             </div>
           </form>
@@ -294,8 +294,5 @@ class FormPage extends Component  {
 
 export default FormPage;
 
-// <form action = {"https://mailthis.to/"+this.state.inputValue} method="POST" target="_blank">
-// <MDBInput value={this.state.value} name="reply"/> 
-   
-//      <MDBBtn color="primary" type = 'submit' className="form-control" >Register</MDBBtn>
-//     </form>
+
+
