@@ -133,7 +133,7 @@ Others - +1(204)9526090<br/>
   <div className="footer-copyright text-center py-3">
     <Container fluid className="copy">
       &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.canvisaguide.com"> canvisaguide.com</a>
+      <a href="https://www.canvisaguide.com">CanVisaGuide</a>
 
     </Container>
   </div>
