@@ -4,7 +4,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreac
 const contactUs = () => {
         return(
 
-<form action="https://mailthis.to/canvisaguideinfo@gmail.com" method="POST" target="_blank" encType="multipart/form-data"> 
+<form action="https://script.google.com/macros/s/AKfycbxNCI6TpF4bRz9_t--is3RzLXqUe4tWiUQTwucjXB30pe3HgG0/exec" method="POST" target="_blank" encType="multipart/form-data"> 
           <div className="form">
      
             <h3 className=" text-center">Write to us</h3>
