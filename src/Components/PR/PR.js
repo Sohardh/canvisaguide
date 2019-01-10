@@ -5,6 +5,7 @@ import resident from '../../Assets/resident.jpg';
 import flags from '../../Assets/image21.jpeg';
 import business from '../../Assets/business.jpg';
 import caregivers from '../../Assets/caregivers2.jpg'
+import './PR.css';
 class PR extends Component {
   componentWillMount = function() {
     if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
@@ -39,7 +40,7 @@ class PR extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className="head w-responsive text-center mx-auto p-1 mt-1 best ">
+                      <h2 className="head w-responsive text-center mx-auto p-1 mt-1 best heading">
                       “You can easily be a permanent resident of Canada”
 
                       </h2>
@@ -64,7 +65,7 @@ class PR extends Component {
                 <Fade bottom appear><h3>  Under: </h3></Fade>
                 <ul className="list-group">
                 <MDBRow>
-                <MDBCol md="4">
+                <MDBCol md="6">
                   <Fade bottom appear><li className="list-group-item para"> FSW
 </li></Fade>
                   <Fade bottom appear><li className="list-group-item para">FTC
@@ -72,7 +73,7 @@ class PR extends Component {
 <Fade bottom appear><li className="list-group-item para">FSE
 </li></Fade>
 </MDBCol>
- <MDBCol md="4">
+ <MDBCol md="6">
                   <Fade bottom appear><li className="list-group-item para">Business
 </li></Fade>
                   <Fade bottom appear><li className="list-group-item para">Investor 
@@ -80,7 +81,7 @@ class PR extends Component {
 <Fade bottom appear><li className="list-group-item para">Live-in caregiver
 </li></Fade>
 </MDBCol>
- <MDBCol md="4">
+ <MDBCol md="6">
                   <Fade bottom appear><li className="list-group-item para"> PNP 
 </li></Fade>
                   <Fade bottom appear><li className="list-group-item para">Canadian experience class
@@ -99,7 +100,7 @@ class PR extends Component {
                 <p className=" y para" md="auto">We would assess your application based on:</p>
                 <ul className="list-group">
                 <MDBRow>
-                <MDBCol md="4">
+                <MDBCol md="6">
                   <Fade bottom appear><li className="list-group-item para"> • Age
 </li></Fade>
                   <Fade bottom appear><li className="list-group-item para">•  Education
@@ -120,14 +121,14 @@ class PR extends Component {
                 </ul> 
                 </div>         
               </Fade>
-           
-            </MDBContainer>
-            <br/>
-            <Fade bottom appear><p className="mx-auto p-1 mt-1 text-justify para" md="auto">These factors are part of a 100-point grid used to assess eligibility. For the Federal Skilled Worker Program. You earn points for how well you do in each of the 6 factors.<br/>
+              <br/>
+            <Fade bottom appear><p className="mx-auto p-1 mt-1 text-justify last" md="auto">These factors are part of a 100-point grid used to assess eligibility. For the Federal Skilled Worker Program. You earn points for how well you do in each of the 6 factors.<br/>
             The current pass mark is 67 points.<br/>
             For more details or for an assessment: contact our office or email us. </p>
             </Fade>
       
+            </MDBContainer>
+           
                 </MDBCol>
               </MDBRow> 
             </MDBCardBody>

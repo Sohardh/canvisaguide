@@ -68,8 +68,8 @@ Opposite to Lovely Autos, Jalandhar-144001
 E-mail: canvisaguideinfo@gmail.com<br/>
 Call on: <br/> 
 
-India - +918054466090 <br/>
-Others - +1(204)9526090<br/>
+India :- +918054466090 <br/>
+Canada :- +1(204)9526090<br/>
 
  
       </p>

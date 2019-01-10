@@ -5,6 +5,7 @@ import resident from '../../Assets/resident.jpg';
 import flags from '../../Assets/image21.jpeg';
 import business from '../../Assets/business.jpg';
 import caregivers from '../../Assets/caregivers2.jpg'
+import './BusinessVisa.css'
 class BusinessVisa extends Component {
   componentWillMount = function() {
     if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
@@ -14,7 +15,7 @@ class BusinessVisa extends Component {
     render(){
       return(
 <MDBContainer>
-<p className="head">Business Visa</p>
+<p className="head heading">Business Visa</p>
             <MDBRow>
               <MDBCol md="6" >
                 <Fade left appear><img className="serviceimage" src={business} alt="services"/></Fade>
@@ -46,7 +47,7 @@ Revised investment level 1.2 million Canadian
             </ul>
             </ul>
             </div>
-            <p className="head">Entrepreneurs</p>
+            <p className="head heading">Entrepreneurs</p>
               <div className="service">
                 <ul className="list-group list-group-flush">
                 <ul className="list-group">

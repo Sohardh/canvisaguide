@@ -51,7 +51,7 @@ class Visit extends Component {
                    </div>
                    <br/>
                  
-                   <Fade bottom appear><p className="text-center one">Most people who wish to enter Canada for a vacation, studying or for a business trip must apply for and be granted a Temporary Resident Visa (TRV). 
+                   <Fade bottom appear><p className=" text-center one">Most people who wish to enter Canada for a vacation, studying or for a business trip must apply for and be granted a Temporary Resident Visa (TRV). 
 </p></Fade><br/>
                    <MDBRow className="mt-4">
             <MDBCol md="6" >

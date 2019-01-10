@@ -167,3 +167,6 @@ background: #ff1a1a;
     display:inline-block;
     line-height:40px;
 }
+* {
+  font-family: 'Ubuntu', sans-serif;
+}

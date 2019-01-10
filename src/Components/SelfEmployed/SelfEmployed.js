@@ -4,7 +4,9 @@ import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } 
 import resident from '../../Assets/resident.jpg';
 import flags from '../../Assets/image21.jpeg';
 import business from '../../Assets/business.jpg';
-import caregivers from '../../Assets/caregivers2.jpg'
+import caregivers from '../../Assets/caregivers2.jpg';
+import employee from '../../Assets/employee.jpg';
+import './self.css'
 class SelfEmployed extends Component {
   componentWillMount = function() {
     if(window.location.href.indexOf('?reloaded') === -1) window.location.href = window.location.href + "?reloaded=true";
@@ -13,8 +15,36 @@ class SelfEmployed extends Component {
 
     render(){
       return(
+<MDBCard>
+<p className="head heading">Self Employed</p>
+  <MDBCardBody>
+  <MDBRow>
+    <MDBCol>
+    <div className="w-responsive text-center mx-auto p-3 mt-2 ">
+<Fade bottom appear>
+            <MDBCard reverse>
+            
+              <MDBView hover cascade waves>
+              <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">
+           <div className=" text-center mx-auto p-3 mt-2 image">
+              <img
+                  src={employee}
+                  alt=""
+                  className="image " 
+                />
+            </div>
+              </a>
+                
+                <MDBMask overlay="white-slight" className="waves-light" />
+              </MDBView>
+              
+              
+            </MDBCard>
+            </Fade>
+             </div>
+        
 <MDBContainer>
-<p className="head">Self Employed</p>
+
  <Fade bottom appear><p className="responsive "> The person must intend and able to be self-employed in Canada. 
             <br/> <br/>
            We access you on selection criteria:
@@ -52,6 +82,10 @@ class SelfEmployed extends Component {
                 <br/>
                      <p className="responsive ">     <strong> Contact CVG for details or detailed assessment.</strong></p>
             </MDBContainer>
+            </MDBCol>
+            </MDBRow>
+            </MDBCardBody>
+            </MDBCard>
             );
   }
 }

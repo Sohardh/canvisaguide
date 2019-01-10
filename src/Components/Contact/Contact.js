@@ -1,5 +1,6 @@
 import React , { Component }  from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import './contact.css'
 
 const contactUs = () => {
         return(
@@ -7,7 +8,7 @@ const contactUs = () => {
 <form action="https://script.google.com/macros/s/AKfycbxNCI6TpF4bRz9_t--is3RzLXqUe4tWiUQTwucjXB30pe3HgG0/exec" method="POST" target="_blank" encType="multipart/form-data"> 
           <div className="form">
      
-            <h3 className=" text-center">Write to us</h3>
+            <h3 className=" text-center write">Write to us</h3>
             <div className="grey-text">
             
 

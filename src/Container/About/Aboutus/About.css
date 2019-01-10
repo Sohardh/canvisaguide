@@ -5,6 +5,12 @@
 }
 .best{
     font-size: 2.5em;
-	font-family: 'Thasadith', sans-serif;
+
 	color: black;
+}
+.heading {
+	color: black;
+}
+p{
+	font-size: 1em;
 }
