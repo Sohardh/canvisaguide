@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask,  MDBView, } from "mdbreact";
 import hs1 from '../../Assets/statue.JPG';
 import canada2 from '../../Assets/studyusa.jpg';
 import Fade from 'react-reveal/Fade';
@@ -41,8 +41,8 @@ class USA extends Component {
               </MDBView>
               
               <MDBCardBody cascade className="text-center">
-                <h2 className="font-weight-bold best">
-                 Visit USA
+                 <h2 className=" w-responsive text-center mx-auto p-1 mt-1 quote">
+                "Visit Canada"
                 </h2>
                
                 
@@ -54,7 +54,7 @@ class USA extends Component {
              </div>
          
             <MDBContainer className="text-justify">
-               <Fade right appear><p>
+               <Fade bottom appear><p>
                USA Visitor Visa is a tourist visa to the United States of America. It is also known as B2 Visa. It is a non-immigrant visa issued to people entering the US temporarily for pleasure, tourism, or medical treatment. Any foreign citizen who wants to visit USA for tourism, visiting with family and friends, attending special events like family functions and ceremonies, or for medical treatment may qualify for and can apply for the Visitor Visa.
               </p></Fade>
               
@@ -81,7 +81,7 @@ class USA extends Component {
                 <MDBMask overlay="white-slight" className="waves-light" />
               </MDBView>
               <MDBCardBody cascade className="text-center">
-                <h2 className="font-weight-bold best">
+                <h2 className="font-weight-bold best quote">
                 Study in USA
                 </h2>
              

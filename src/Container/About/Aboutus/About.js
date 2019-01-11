@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from "mdbreact";
 import hs1 from '../../../Assets/city.jpg';
-import nigara from '../../../Assets/nigara2.jpg'
 import canada2 from '../../../Assets/hs4.jpg';
 import canada1 from '../../../Assets/canada1.jpg';
 import canada3 from '../../../Assets/canada3.jpg';
@@ -42,7 +41,7 @@ class About extends Component {
               
               <MDBCardBody cascade className="text-center">
                 <h2 className="font-weight-bold best">
-                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" className="heading" target="_blank">About Canada</a>
+                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" className="heading quote" target="_blank">About Canada</a>
                 </h2>
                
                 
@@ -84,7 +83,7 @@ class About extends Component {
               </MDBView>
               <MDBCardBody cascade className="text-center">
                 <h2 className="font-weight-bold best">
-                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/archives/backgrounders-2011/facts-canada-immigration-history.html" className="heading" target="_blank">  Canada history of immigration</a>
+                  <a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/archives/backgrounders-2011/facts-canada-immigration-history.html" className="heading quote" target="_blank">  Canada history of immigration</a>
                 </h2>
              
               </MDBCardBody>

@@ -1,10 +1,7 @@
 import React , { Component }  from 'react';
 import Fade from 'react-reveal/Fade';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
-import resident from '../../Assets/resident.jpg';
-import flags from '../../Assets/image21.jpeg';
+import {  MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import business from '../../Assets/business.jpg';
-import caregivers from '../../Assets/caregivers2.jpg'
 import './BusinessVisa.css'
 class BusinessVisa extends Component {
   componentWillMount = function() {

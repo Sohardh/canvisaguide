@@ -1,11 +1,11 @@
-import React , { Component }  from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import React  from 'react';
+import {   MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 import './contact.css'
 
 const contactUs = () => {
         return(
 
-<form action="https://script.google.com/macros/s/AKfycbxNCI6TpF4bRz9_t--is3RzLXqUe4tWiUQTwucjXB30pe3HgG0/exec" method="POST" target="_blank" encType="multipart/form-data"> 
+<form id="gform" action="https://script.google.com/macros/s/AKfycbwWdTD2p8Ln_XjP9MEr0d7XNMfA1IZlihwt01dljD0bObgnXNkZ/exec" method="POST" target="_blank" encType="multipart/form-data"> 
           <div className="form">
      
             <h3 className=" text-center write">Write to us</h3>

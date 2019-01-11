@@ -39,8 +39,8 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
                  <h2 className="text-center mx-auto p-1 mt-1 tabhead gradient-card-header blue-gradient">
            <strong>Canadian English Language Proficiency Index Program (CELPIP) – General Test score equivalency chart</strong>
             </h2>
-<div class='table-responsive'>
-<table id="tablePreview" class="table">
+<div className='table-responsive'>
+<table id="tablePreview" className="table">
 
   <thead>
     <tr>
@@ -111,7 +111,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
            <strong>International English Language Testing System (IELTS) – General Training – Test score equivalency chart</strong>
             </h2>
 
-<table id="tablePreview" class="table">
+<table id="tablePreview" className="table">
 
   <thead>
     <tr>
@@ -153,7 +153,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
            <strong>Canadian English Language Proficiency Index Program (CELPIP) – General Test score equivalency chart</strong>
             </h2>
 
-<table id="tablePreview" class="table">
+<table id="tablePreview" className="table">
 
   <thead>
     <tr>
@@ -211,7 +211,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
            <strong>Test d’évaluation de français pour le Canada (TEF Canada) Test score equivalency chart</strong>
             </h2>
 
-<table id="tablePreview" class="table">
+<table id="tablePreview" className="table">
 
   <thead>
     <tr>
@@ -288,7 +288,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
            <strong>Test de connaissance du français pour le Canada (TCF Canada) Test score equivalency chart</strong>
             </h2>
 
-<table id="tablePreview" class="table">
+<table id="tablePreview" className="table">
 
   <thead>
     <tr>
@@ -373,7 +373,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
             </h2>
 
 
-<table id="tablePreview " class="table">
+<table id="tablePreview " className="table">
 
   <thead>
     <tr>
@@ -438,7 +438,7 @@ Each test evaluates and gives scores for 4 abilities: reading, writing, listenin
             </h2>
 
 
-<table id="tablePreview " class="table">
+<table id="tablePreview " className="table">
 
   <thead>
     <tr>

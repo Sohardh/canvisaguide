@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask,MDBView} from "mdbreact";
 import Fade from 'react-reveal/Fade';
 import classroom from '../../Assets/classroom.jpg';
 import './coaching.css';
 import chart1 from '../../Assets/chart1.jpeg';
 import chart2 from '../../Assets/chart2.jpeg';
-import { string } from 'prop-types';
 
 class Coaching extends Component {
  
@@ -83,27 +82,31 @@ class Coaching extends Component {
                   
             
                  
-               <MDBContainer className="text-center ">
+            
                <MDBRow>
                  <MDBCol md="6">
+                  <div className=" text-center mx-auto p-3 mt-2">
                  <img
                       src={chart1}
                       alt=""
-                      className="chart"
+                      className="chart img-fluid"
                     />
+                    </div>
 
                  </MDBCol>
                  <MDBCol md="6">
+                  <div className=" text-center mx-auto p-3 mt-2">
                  <img
                       src={chart2}
                       alt=""
-                      className="chart"
+                      className="chart img-fluid"
                     />
+                    </div>
 
                  </MDBCol>
                </MDBRow>
                  
-                </MDBContainer>
+                
                  
                 <div className="service">
                     <ul className="list-group list-group-flush">

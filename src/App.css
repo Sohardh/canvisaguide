@@ -96,6 +96,7 @@ color: white;
  .links {
     text-align: center;
     margin-left: 40%;
+    margin-right: 10%;
     color: white;
     
   }
@@ -138,7 +139,7 @@ background: #ff1a1a;
     right: 0px;
     cursor: pointer;
 }
-.hp-ctn-howItWorks p {
+.hp-ctn-howItWorks span {
     color:#fff;
     display:inline-block;
     line-height:40px;
@@ -162,11 +163,60 @@ background: #ff1a1a;
     right: 0px;
     cursor: pointer;
 }
-.btnContact p{
+.btnContact span{
     color:#fff;
     display:inline-block;
     line-height:40px;
 }
+
+.appp {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border:none;
+  text-decoration: none;
+  text-align: left;
+
+  
+}
+.appp:focus {
+  outline: 0;
+  color: white;
+  text-decoration: none;
+
+
+}
+.appp: hover {
+ text-decoration: none;
+ color: blue;
+
+}
+.appLinks {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border:none;
+  text-decoration: none;
+  padding:0;
+  color: white;
+
+}
+.appLinks:focus {
+  outline: 0;
+}
+
+.inText:active{ 
+color: white;
+width: 100%;
+text-decoration: none;
+ }
+ .inText:focus {
+  color: white;
+ }
+ .inText:hover {
+  text-decoration: none;
+
+ }
 * {
   font-family: 'Ubuntu', sans-serif;
 }

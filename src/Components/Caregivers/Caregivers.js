@@ -39,7 +39,7 @@ class Caregivers extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className=" head text-center mx-auto p-1 mt-1 best heading">
+                      <h2 className=" head text-center mx-auto p-1 mt-1 best heading quote">
                       “Live-in caregivers”
                       </h2>
                     </MDBCardBody>

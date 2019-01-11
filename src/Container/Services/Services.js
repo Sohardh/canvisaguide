@@ -1,5 +1,5 @@
 import React , { Component }  from 'react';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import {  MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import "./Services.css";
 import Fade from 'react-reveal/Fade';
 import service from '../../Assets/service.jpg';
@@ -35,7 +35,7 @@ class Services extends Component {
                 </div>
                 </MDBCol>
                 <MDBCol md="6" >
-                <Fade right appear><img className="serviceimage" src={service} alt="services"/></Fade>
+                <Fade right appear><div className=" text-center mx-auto p-3 mt-2"><img className="serviceimage img-fluid" src={service} alt="services"/></div></Fade>
                 </MDBCol>
                 </MDBRow>
 
@@ -43,8 +43,8 @@ class Services extends Component {
 
                 <MDBRow className="mt-4">
                 <MDBCol md="6" >
-                <Fade left appear><img className="serviceimage1" src={services} alt="services"/></Fade>
-                <Fade left appear><img className="serviceimage1" src={denied} alt="services"/></Fade>
+                <Fade left appear><div className=" text-center mx-auto p-3 mt-2"><img className="serviceimage1" src={services} alt="services"/></div></Fade>
+                <Fade left appear><div className=" text-center mx-auto p-3 mt-2"><img className="serviceimage1" src={denied} alt="services"/></div></Fade>
                 </MDBCol>
                 <MDBCol md="6" >
                 <div className="service1">
@@ -98,7 +98,7 @@ class Services extends Component {
                 </div>
                 </MDBCol>
                 <MDBCol md="6" >
-                <Fade right appear><img className="serviceimage" src={services1} alt="services"/></Fade>
+                <Fade right appear><div className=" text-center mx-auto p-3 mt-2"><img className="serviceimage" src={services1} alt="services"/></div></Fade>
                 </MDBCol>
                 </MDBRow>
 

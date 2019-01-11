@@ -1,10 +1,8 @@
 //Footer of the website, visible at the bottom of every page.
 
 import React from "react";
-import { Route } from 'react-router-dom';
 import { Col, Container, Row, Footer } from "mdbreact";
 import "./Footer.css";
-import Immigration from '../../Container/Immigration/Immigration';
 import About from '../../Container/About/Aboutus/About';
 import {Modal } from 'react-bootstrap';
 import Spouse from '../SpouseSponsor/SpouseSponsor';

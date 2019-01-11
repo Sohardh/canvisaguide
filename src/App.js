@@ -26,7 +26,6 @@ import BusinessVisa from './Components/BusinessVisa/BusinessVisa';
 import SelfEmployed from './Components/SelfEmployed/SelfEmployed';
 import Caregivers from './Components/Caregivers/Caregivers';
 import PR from './Components/PR/PR';
-import Entrepreneur from './Components/Entrepreneur/Entrepreneur';
 import {Modal } from 'react-bootstrap';
 import Form from './Components/Form/Form'
 import ContactUs from './Components/Contact/Contact';
@@ -102,7 +101,7 @@ handleHideContact =() => {
 
                   <DropdownItem>
                     <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="immigration" >Language Test Equivalency Charts</NavLink>
+                <NavLink to="immigration"  >Language Test Equivalency Charts</NavLink>
                    </NavItem>
                   </DropdownItem>
                   <DropdownItem>
@@ -141,22 +140,22 @@ handleHideContact =() => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <a target="_blank" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC </a>
                   </DropdownItem>
                   <DropdownItem>
-                   <a target="_blank" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">IRB</a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">IRB</a>
                   </DropdownItem>
                    <DropdownItem>
-                   <a target="_blank" href="https://www.immigratemanitoba.com/news-and-notices/">Manitoba</a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://www.immigratemanitoba.com/news-and-notices/">Manitoba</a>
                   </DropdownItem>
                    <DropdownItem>
-                   <a target="_blank" href="https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program/News">British Columbia </a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program/News">British Columbia </a>
                   </DropdownItem>
                   <DropdownItem>
-                   <a target="_blank" href=" http://www.ontarioimmigration.ca/en/pnp/OI_PNPNEW.html">Ontario</a>
+                   <a target="_blank" rel="noopener noreferrer" href=" http://www.ontarioimmigration.ca/en/pnp/OI_PNPNEW.html">Ontario</a>
                   </DropdownItem>
                   <DropdownItem>
-                   <a target="_blank" href="https://www.alberta.ca/news.aspx">Alberta</a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://www.alberta.ca/news.aspx">Alberta</a>
                   </DropdownItem>
                   <DropdownItem divider />
               
@@ -176,10 +175,10 @@ handleHideContact =() => {
 
       {/*Button For free Appraisal form*/}
         <div className="hp-ctn-howItWorks">
-    <p onClick={this.handleShow}>Free Assessment</p>
+    <span onClick={this.handleShow}>Free Assessment</span>
       </div>
       <div className="btnContact">
-    <p onClick={this.handleShowContact}>Contact Us</p>
+    <span onClick={this.handleShowContact}>Contact Us</span>
       </div>
 
       
@@ -189,7 +188,7 @@ handleHideContact =() => {
       <Route path="/permanentResident" component={PR}/>
       <Route path="/caregivers" component={Caregivers}/>
       <Route path="/selfemployed" component={SelfEmployed}/>
-         <Route path="/businessvisa" component={BusinessVisa}/>
+      <Route path="/businessvisa" component={BusinessVisa}/>
       <Route path="/nomineesponsor" exact component={NomineeSponsor}/>
       <Route path="/spousesponsor" exact component={SpouseSponsor}/>
       <Route path="/parentssponsor" exact component={ParentsSponsor}/>

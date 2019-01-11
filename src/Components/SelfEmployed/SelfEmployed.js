@@ -26,11 +26,11 @@ class SelfEmployed extends Component {
             
               <MDBView hover cascade waves>
               <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html" target="_blank">
-           <div className=" text-center mx-auto p-3 mt-2 image">
+           <div className=" text-center mx-auto p-3 mt-2">
               <img
                   src={employee}
                   alt=""
-                  className="image " 
+                  className="img-fluid " 
                 />
             </div>
               </a>

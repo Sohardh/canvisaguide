@@ -40,7 +40,7 @@ class PR extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className="head w-responsive text-center mx-auto p-1 mt-1 best heading">
+                      <h2 className="head w-responsive text-center mx-auto p-1 mt-1 best heading quote">
                       “You can easily be a permanent resident of Canada”
 
                       </h2>

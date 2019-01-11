@@ -40,7 +40,7 @@ class Study extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best ">
+                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best quote">
                       “Canada is home to the absolute best schools on the planet”
 
                       </h2>

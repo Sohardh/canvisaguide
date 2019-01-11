@@ -1,5 +1,5 @@
 import React , { Component }  from 'react';
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
+import { MDBMask, MDBView, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
 import Fade from 'react-reveal/Fade';
 import bridge from '../../Assets/city.jpg';
 import './visit.css';
@@ -41,7 +41,7 @@ class Visit extends Component {
                     </MDBView>
                     
                     <MDBCardBody cascade className="text-center">
-                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best">
+                      <h2 className=" w-responsive text-center mx-auto p-1 mt-1 best quote">
                       “Canada is first choice to visit for every person.  Every year, Canada welcomes more than 35 million people”
                       </h2>
                     </MDBCardBody>
