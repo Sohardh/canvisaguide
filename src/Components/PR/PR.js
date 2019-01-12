@@ -1,10 +1,8 @@
 import React , { Component }  from 'react';
 import Fade from 'react-reveal/Fade';
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
-import resident from '../../Assets/resident.jpg';
-import flags from '../../Assets/image21.jpeg';
-import business from '../../Assets/business.jpg';
-import caregivers from '../../Assets/caregivers2.jpg'
+import resident from '../../Assets/home.jpg';
+
 import './PR.css';
 class PR extends Component {
   componentWillMount = function() {

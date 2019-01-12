@@ -98,35 +98,40 @@ handleHideContact =() => {
                 </DropdownToggle>
 
                 <DropdownMenu right>
-
+                  <a href="immigration">
                   <DropdownItem>
                     <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="immigration"  >Language Test Equivalency Charts</NavLink>
+               Language Test Equivalency Charts
                    </NavItem>
-                  </DropdownItem>
+                  </DropdownItem></a>
+
+                  <a href="permanentResident">
                   <DropdownItem>
                    <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="permanentResident" >Pathway to Permanent Resident Canada</NavLink>
+               Pathway to Permanent Resident Canada
                    </NavItem>
-                  </DropdownItem>
+                  </DropdownItem></a>
+                  <a href="businessvisa">
                    <DropdownItem>
                    <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="businessvisa" >Business Visa</NavLink>
+             Business Visa
                    </NavItem>
-                  </DropdownItem>
-                
+                  </DropdownItem></a>
+                <a href="selfemployed">
                   <DropdownItem>
                   <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="selfemployed" >Self Employed</NavLink>
+              Self Employed
                    </NavItem>
-                  </DropdownItem>
+                  </DropdownItem></a>
+                  
+                  <a href="caregivers">
                   <DropdownItem>
                    <NavItem  onClick={this.closeNavbar}>
-                <NavLink to="caregivers" >Permanent residence for caregivers
-                    </NavLink>
+               Permanent residence for caregivers
+                   
                    </NavItem>
-                  </DropdownItem>
-                  <DropdownItem divider />
+                  </DropdownItem></a>
+                
                      
 
                 </DropdownMenu>

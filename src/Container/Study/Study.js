@@ -80,7 +80,7 @@ class Study extends Component {
             
             </MDBContainer>
             <br/>
-            <Fade bottom appear><img className="image" src={flags} alt="services"/></Fade>
+            <Fade bottom appear><img className="image1" src={flags} alt="services"/></Fade>
       
                 </MDBCol>
               </MDBRow>
