@@ -144,25 +144,31 @@ handleHideContact =() => {
                  <span className='linkNews'><strong>News</strong></span>
                 </DropdownToggle>
                 <DropdownMenu right>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">
                   <DropdownItem>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.canada.ca/en/immigration-refugees-citizenship/news.html">IRCC </a>
-                  </DropdownItem>
+                IRCC
+                  </DropdownItem> </a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">
                   <DropdownItem>
-                   <a target="_blank" rel="noopener noreferrer" href="https://irb-cisr.gc.ca/en/news/Pages/index.aspx">IRB</a>
-                  </DropdownItem>
+                 IRB
+                  </DropdownItem></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.immigratemanitoba.com/news-and-notices/">
                    <DropdownItem>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.immigratemanitoba.com/news-and-notices/">Manitoba</a>
-                  </DropdownItem>
+                   Manitoba
+                  </DropdownItem></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program/News">
                    <DropdownItem>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.welcomebc.ca/Immigrate-to-B-C/B-C-Provincial-Nominee-Program/News">British Columbia </a>
-                  </DropdownItem>
+                 British Columbia
+                  </DropdownItem> </a>
+                  <a target="_blank" rel="noopener noreferrer" href=" http://www.ontarioimmigration.ca/en/pnp/OI_PNPNEW.html">
                   <DropdownItem>
-                   <a target="_blank" rel="noopener noreferrer" href=" http://www.ontarioimmigration.ca/en/pnp/OI_PNPNEW.html">Ontario</a>
-                  </DropdownItem>
+                 Ontario
+                  </DropdownItem></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.alberta.ca/news.aspx">
                   <DropdownItem>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.alberta.ca/news.aspx">Alberta</a>
-                  </DropdownItem>
-                  <DropdownItem divider />
+                Alberta
+                  </DropdownItem></a>
+                 
               
 
                 </DropdownMenu>
